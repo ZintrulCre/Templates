@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Django To Do List</title>
+</head>
+
+<body>
+    <h1><a href="{% url 'main_page' %}">Django To Do List</a></h1>
+    <hr>
+    <h3>Add todo</h3>
+    <form action="{% url 'main_page' %}" method="POST">
+        {% csrf_token %}
+        <label for="title">to do</label>
+        <input type="text" name="title" id="title">
+        <label for="due">due date</label>
+        <input type="text" name="due" id="due">
+        <input type="submit" value="add">
+    </form>
+    <hr>
+    <h3>All todos</h3>
+    <table>
+        <tr>
+            <th>to do</th>
+            <th>due date</th>
+            <th>finished</th>
+        </tr>
+        <tr>
+            {% for todo in todos %}
+            <form action="{% url 'delete_page' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="id" value={{todo.id}}>
+                <td>{{todo.title}}</td>
+                <td>{{todo.due}}</td>
+                <td>{{todo.status}}</td>
+                <td><input type="submit" value="delete"></td>
+            </form>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>
