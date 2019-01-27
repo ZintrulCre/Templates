@@ -7,9 +7,11 @@
 int main() {
 //    vector<int> nums{1, 2, 3, 4, 6, 8, 9, 10, 13, 14, 16, 17, 19, 21, 24, 26, 27, 28, 29}, c{3, 14, 50};
 //    vector<int> nums{1,2,3,4,5}, c{7,8,9};
-    vector<int> nums{1, 4, 6, 7, 8, 20}, c{2, 7, 15};
+    vector<vector<int>> nums{{2, 2, 2},
+                             {2, 1, 2},
+                             {2, 2, 2}};
     Solution sol;
-    auto s = sol.mincostTickets(nums, c);
+    auto s = sol.surfaceArea(nums);
     Printer::GetInstance().Print(s);
 
 //    Printer::GetInstance().Print(1&1);

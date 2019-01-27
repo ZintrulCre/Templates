@@ -7,21 +7,27 @@
 
 class Solution {
 public:
-    int mincostTickets(vector<int> &days, vector<int> &costs) {
-        int size = days.size();
-        if (size < 2)
-            return costs[0] * size;
-        vector<int> dp(366, 0);
-        int k = 0;
-        for (int i = 1; i < 366; ++i) {
-            if (k < size && days[k] == i) {
-                dp[i] = min(dp[max(0, i - 1)] + costs[0], dp[max(0, i - 7)] + costs[1]);
-                ++k;
-            } else {
-                dp[i] = min(dp[i - 1], dp[max(0, i - 7)] + costs[1]);
+    int surfaceArea(vector<vector<int>> &grid) {
+        int x = grid.size(), y = x ? grid[0].size() : 0;
+        if (x == 0)
+            return 0;
+        int total = 0, area = 0;
+        for (int i = 0; i < x; ++i) {
+            for (int j = 0; j < y; ++j) {
+                if (grid[i][j] == 0)
+                    continue;
+                area = 2 + 4 * grid[i][j];
+                if (i - 1 >= 0)
+                    area -= min(grid[i - 1][j], grid[i][j]);
+                if (j - 1 >= 0)
+                    area -= min(grid[i][j - 1], grid[i][j]);
+                if (i + 1 < x)
+                    area -= min(grid[i + 1][j], grid[i][j]);
+                if (j + 1 < y)
+                    area -= min(grid[i][j + 1], grid[i][j]);
+                total += area;
             }
-            dp[i] = min(dp[i], dp[max(0, i - 30)] + costs[2]);
         }
-        return dp.back();
+        return total;
     }
 };
