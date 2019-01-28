@@ -4,28 +4,24 @@
 
 #include "Solution.h"
 
-
 class Solution {
 public:
-    int surfaceArea(vector<vector<int>> &grid) {
-        int x = grid.size(), y = x ? grid[0].size() : 0;
-        if (x == 0)
+    int maxIncreaseKeepingSkyline(vector<vector<int>> &grid) {
+        int m = grid.size(), n = m == 0 ? 0 : grid[0].size();
+        if (m == 0)
             return 0;
-        int total = 0, area = 0;
-        for (int i = 0; i < x; ++i) {
-            for (int j = 0; j < y; ++j) {
-                if (grid[i][j] == 0)
-                    continue;
-                area = 2 + 4 * grid[i][j];
-                if (i - 1 >= 0)
-                    area -= min(grid[i - 1][j], grid[i][j]);
-                if (j - 1 >= 0)
-                    area -= min(grid[i][j - 1], grid[i][j]);
-                if (i + 1 < x)
-                    area -= min(grid[i + 1][j], grid[i][j]);
-                if (j + 1 < y)
-                    area -= min(grid[i][j + 1], grid[i][j]);
-                total += area;
+        vector<int> row(m, 0), col(n, 0);
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                row[i] = max(row[i], grid[i][j]);
+                col[j] = max(col[j], grid[i][j]);
+            }
+        }
+        int total = 0;
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                int highest = min(row[i], col[j]);
+                total += max(0, highest - grid[i][j]);
             }
         }
         return total;
