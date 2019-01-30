@@ -13,7 +13,7 @@ public:
     static Printer &GetInstance();
 
     template<typename T>
-    void Print(const T &t,...);
+    void Print(const T &t, ...);
 
     template<typename T>
     void Print(const std::vector<T> &vec);
@@ -34,14 +34,17 @@ private:
 };
 
 template<typename T>
-void Printer::Print(const T &t,...) {
+void Printer::Print(const T &t, ...) {
     std::cout << t << std::endl;
 }
 
 template<typename T>
 void Printer::Print(const std::vector<T> &vec) {
-    for (auto v: vec)
-        std::cout << v;
+    int i = 1, j = 1;
+    for (auto v: vec) {
+        std::cout << v << ' ';
+        --j;
+    }
     std::cout << std::endl;
 }
 

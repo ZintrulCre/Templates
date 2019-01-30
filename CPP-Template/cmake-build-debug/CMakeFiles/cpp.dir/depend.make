@@ -17,9 +17,7 @@ CMakeFiles/cpp.dir/Solution.cpp.o: ../Solution.cpp
 CMakeFiles/cpp.dir/Solution.cpp.o: ../Solution.h
 CMakeFiles/cpp.dir/Solution.cpp.o: ../TreeSerialization.h
 
-CMakeFiles/cpp.dir/Sort.cpp.o: ../DataStructure.h
 CMakeFiles/cpp.dir/Sort.cpp.o: ../Include.h
-CMakeFiles/cpp.dir/Sort.cpp.o: ../Printer.h
 CMakeFiles/cpp.dir/Sort.cpp.o: ../Sort.cpp
 CMakeFiles/cpp.dir/Sort.cpp.o: ../Sort.h
 
@@ -33,6 +31,7 @@ CMakeFiles/cpp.dir/main.cpp.o: ../Include.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Printer.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Solution.cpp
 CMakeFiles/cpp.dir/main.cpp.o: ../Solution.h
+CMakeFiles/cpp.dir/main.cpp.o: ../Sort.h
 CMakeFiles/cpp.dir/main.cpp.o: ../TreeSerialization.h
 CMakeFiles/cpp.dir/main.cpp.o: ../main.cpp
 

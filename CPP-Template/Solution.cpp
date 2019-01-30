@@ -6,24 +6,19 @@
 
 class Solution {
 public:
-    int maxIncreaseKeepingSkyline(vector<vector<int>> &grid) {
-        int m = grid.size(), n = m == 0 ? 0 : grid[0].size();
-        if (m == 0)
-            return 0;
-        vector<int> row(m, 0), col(n, 0);
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                row[i] = max(row[i], grid[i][j]);
-                col[j] = max(col[j], grid[i][j]);
+    void rotate(vector<vector<int>> &matrix) {
+        int size = matrix.size();
+        for (int i = 0; i < size; ++i) {
+            for (int j = i + 1; j < size; ++j) {
+                swap(matrix[i][j], matrix[j][i]);
             }
         }
-        int total = 0;
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                int highest = min(row[i], col[j]);
-                total += max(0, highest - grid[i][j]);
+        Printer::GetInstance().Print(matrix);
+        for (int i = 0; i < (size + 1) / 2; ++i) {
+            for (int j = 0; j < size; ++j) {
+                swap(matrix[j][i], matrix[j][size - i - 1]);
+                Printer::GetInstance().Print(matrix);
             }
         }
-        return total;
     }
 };
