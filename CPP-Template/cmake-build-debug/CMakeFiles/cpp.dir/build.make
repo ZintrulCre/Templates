@@ -70,22 +70,9 @@ CMakeFiles/cpp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/main.cpp -o CMakeFiles/cpp.dir/main.cpp.s
 
-CMakeFiles/cpp.dir/Solution.cpp.o: CMakeFiles/cpp.dir/flags.make
-CMakeFiles/cpp.dir/Solution.cpp.o: ../Solution.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp.dir/Solution.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/Solution.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.cpp
-
-CMakeFiles/cpp.dir/Solution.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/Solution.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.cpp > CMakeFiles/cpp.dir/Solution.cpp.i
-
-CMakeFiles/cpp.dir/Solution.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/Solution.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.cpp -o CMakeFiles/cpp.dir/Solution.cpp.s
-
 CMakeFiles/cpp.dir/Printer.cpp.o: CMakeFiles/cpp.dir/flags.make
 CMakeFiles/cpp.dir/Printer.cpp.o: ../Printer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp.dir/Printer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp.dir/Printer.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/Printer.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.cpp
 
 CMakeFiles/cpp.dir/Printer.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/cpp.dir/Printer.cpp.s: cmake_force
 
 CMakeFiles/cpp.dir/DataStructure.cpp.o: CMakeFiles/cpp.dir/flags.make
 CMakeFiles/cpp.dir/DataStructure.cpp.o: ../DataStructure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpp.dir/DataStructure.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp.dir/DataStructure.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/DataStructure.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/DataStructure.cpp
 
 CMakeFiles/cpp.dir/DataStructure.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/cpp.dir/DataStructure.cpp.s: cmake_force
 
 CMakeFiles/cpp.dir/TreeSerialization.cpp.o: CMakeFiles/cpp.dir/flags.make
 CMakeFiles/cpp.dir/TreeSerialization.cpp.o: ../TreeSerialization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp.dir/TreeSerialization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpp.dir/TreeSerialization.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/TreeSerialization.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp
 
 CMakeFiles/cpp.dir/TreeSerialization.cpp.i: cmake_force
@@ -122,40 +109,23 @@ CMakeFiles/cpp.dir/TreeSerialization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/TreeSerialization.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp -o CMakeFiles/cpp.dir/TreeSerialization.cpp.s
 
-CMakeFiles/cpp.dir/Sort.cpp.o: CMakeFiles/cpp.dir/flags.make
-CMakeFiles/cpp.dir/Sort.cpp.o: ../Sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cpp.dir/Sort.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/Sort.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.cpp
-
-CMakeFiles/cpp.dir/Sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/Sort.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.cpp > CMakeFiles/cpp.dir/Sort.cpp.i
-
-CMakeFiles/cpp.dir/Sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/Sort.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.cpp -o CMakeFiles/cpp.dir/Sort.cpp.s
-
 # Object files for target cpp
 cpp_OBJECTS = \
 "CMakeFiles/cpp.dir/main.cpp.o" \
-"CMakeFiles/cpp.dir/Solution.cpp.o" \
 "CMakeFiles/cpp.dir/Printer.cpp.o" \
 "CMakeFiles/cpp.dir/DataStructure.cpp.o" \
-"CMakeFiles/cpp.dir/TreeSerialization.cpp.o" \
-"CMakeFiles/cpp.dir/Sort.cpp.o"
+"CMakeFiles/cpp.dir/TreeSerialization.cpp.o"
 
 # External object files for target cpp
 cpp_EXTERNAL_OBJECTS =
 
 cpp: CMakeFiles/cpp.dir/main.cpp.o
-cpp: CMakeFiles/cpp.dir/Solution.cpp.o
 cpp: CMakeFiles/cpp.dir/Printer.cpp.o
 cpp: CMakeFiles/cpp.dir/DataStructure.cpp.o
 cpp: CMakeFiles/cpp.dir/TreeSerialization.cpp.o
-cpp: CMakeFiles/cpp.dir/Sort.cpp.o
 cpp: CMakeFiles/cpp.dir/build.make
 cpp: CMakeFiles/cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

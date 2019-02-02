@@ -95,16 +95,16 @@
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.h">
 			<Option target="cpp"/>
 		</Unit>
-		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.cpp">
-			<Option target="cpp"/>
-		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.h">
 			<Option target="cpp"/>
 		</Unit>
-		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.cpp">
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort/MergeSort.h">
 			<Option target="cpp"/>
 		</Unit>
-		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.h">
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort/Sort.h">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort/TempSort.h">
 			<Option target="cpp"/>
 		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp">

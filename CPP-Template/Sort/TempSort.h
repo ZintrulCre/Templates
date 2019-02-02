@@ -2,7 +2,10 @@
 // Created by ZintrulCre on 2019-01-27.
 //
 
-#include "Sort.h"
+#ifndef CPP_SORT_H
+#define CPP_SORT_H
+
+#include "../Include.h"
 
 void BubbleSort(vector<int> &nums) {
     auto size = nums.size();
@@ -47,3 +50,4 @@ void HeapSort(vector<int> &nums) {
         AdjustHeap(nums, i, size);
     }
 }
+#endif //CPP_SORT_H

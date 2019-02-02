@@ -177,60 +177,6 @@ Printer.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Printer.cpp.s
 .PHONY : Printer.cpp.s
 
-Solution.o: Solution.cpp.o
-
-.PHONY : Solution.o
-
-# target to build an object file
-Solution.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Solution.cpp.o
-.PHONY : Solution.cpp.o
-
-Solution.i: Solution.cpp.i
-
-.PHONY : Solution.i
-
-# target to preprocess a source file
-Solution.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Solution.cpp.i
-.PHONY : Solution.cpp.i
-
-Solution.s: Solution.cpp.s
-
-.PHONY : Solution.s
-
-# target to generate assembly for a file
-Solution.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Solution.cpp.s
-.PHONY : Solution.cpp.s
-
-Sort.o: Sort.cpp.o
-
-.PHONY : Sort.o
-
-# target to build an object file
-Sort.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Sort.cpp.o
-.PHONY : Sort.cpp.o
-
-Sort.i: Sort.cpp.i
-
-.PHONY : Sort.i
-
-# target to preprocess a source file
-Sort.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Sort.cpp.i
-.PHONY : Sort.cpp.i
-
-Sort.s: Sort.cpp.s
-
-.PHONY : Sort.s
-
-# target to generate assembly for a file
-Sort.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Sort.cpp.s
-.PHONY : Sort.cpp.s
-
 TreeSerialization.o: TreeSerialization.cpp.o
 
 .PHONY : TreeSerialization.o
@@ -300,12 +246,6 @@ help:
 	@echo "... Printer.o"
 	@echo "... Printer.i"
 	@echo "... Printer.s"
-	@echo "... Solution.o"
-	@echo "... Solution.i"
-	@echo "... Solution.s"
-	@echo "... Sort.o"
-	@echo "... Sort.i"
-	@echo "... Sort.s"
 	@echo "... TreeSerialization.o"
 	@echo "... TreeSerialization.i"
 	@echo "... TreeSerialization.s"

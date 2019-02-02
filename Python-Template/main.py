@@ -1,8 +1,6 @@
-class Solution:
-    def maxIncreaseKeepingSkyline(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
-        row = [max(grid[i]) for i in len(grid)]
-        col = [max(grid[0][j]) for j in len(grid[0])]
+import Solution
+
+nums = [2,3,1,2,4,3]
+sol = Solution.Solution()
+s = sol.minSubArrayLen(7,nums)
+print(s)

@@ -6,8 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/DataStructure.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/DataStructure.cpp.o"
   "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Printer.cpp.o"
-  "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Solution.cpp.o"
-  "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Sort.cpp.o"
   "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/TreeSerialization.cpp.o"
   "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/main.cpp" "/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o"
   )
