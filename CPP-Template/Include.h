@@ -28,6 +28,9 @@ using std::pair;
 using std::unordered_map;
 using std::unordered_set;
 using std::pair;
+using std::begin;
+using std::end;
+
 using std::string;
 using std::to_string;
 using std::swap;

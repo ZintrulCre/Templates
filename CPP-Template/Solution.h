@@ -11,35 +11,23 @@
 #include "DataStructure.h"
 #include "TreeSerialization.h"
 
-
 class Solution {
 public:
-    vector<vector<int>> ret;
-
-    vector<vector<int>> FindPath(TreeNode *root, int expectNumber) {
+    void connect(TreeLinkNode *root) {
         if (!root)
-            return {};
-        ret.clear();
-        vector<int> path;
-        Traverse(root, path, expectNumber + 0);
-        return ret;
+            return;
+        Support(root, nullptr);
     }
 
-    void Traverse(TreeNode *node, vector<int> &path, int &&left) {
-        path.push_back(node->val);
-        if (!node->left && !node->right) {
-            if (left == node->val)
-                ret.emplace_back(vector<int>(path));
-            path.pop_back();
-            return;
+    void Support(TreeLinkNode *node, TreeLinkNode *next) {
+        if (node) {
+            if (node->left && node->right)
+                node->left->next = node->right;
+            if (node->right && next && next->left)
+                node->right->next = next->left;
+            Support(node->left, node->right);
+            Support(node->right, next && next->left ? next->left : nullptr);
         }
-        if (node->left) {
-            Traverse(node->left, path, left - node->val);
-        }
-        if (node->right) {
-            Traverse(node->right, path, left - node->val);
-        }
-        path.pop_back();
     }
 };
 

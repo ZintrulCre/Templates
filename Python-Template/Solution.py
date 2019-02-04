@@ -1,18 +1,23 @@
+class TreeLinkNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+        self.next = None
+
 class Solution:
-    def minSubArrayLen(self, s, nums):
-        """
-        :type s: int
-        :type nums: List[int]
-        :rtype: int
-        """
-        i, j, size, sum, min_len = 0, 0, len(nums), 0, len(nums)
-        if size == 0:
-            return 0
-        while j < size:
-            sum += nums[j]
-            while sum >= s:
-                sum -= nums[i]
-                i += 1
-                min_len = min(min_len, j - i + 2)
-            j += 1
-        return min_len if i != 0 else 0
+    # @param root, a tree link node
+    # @return nothing
+    def Support(self, node, next_node):
+        if node:
+            if node.left and node.right:
+                node.left.next = node.right
+            if node.right and next_node and next_node.left:
+                node.right.next = next_node.left
+            self.Support(node.left, node.right)
+            self.Support(node.right, next_node.left if next_node and next_node.left else None)
+
+    def connect(self, root):
+        if not root:
+            return
+        self.Support(root, None)
