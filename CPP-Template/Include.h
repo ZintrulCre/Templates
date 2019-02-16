@@ -6,6 +6,7 @@
 #define CPP_INCLUDE_H
 
 #include <iostream>
+#include <cmath>
 #include <math.h>
 #include <limits>
 #include <algorithm>
@@ -17,19 +18,31 @@
 #include <set>
 #include <unordered_map>
 #include <unordered_set>
-#include <cmath>
 
 using std::vector;
 using std::queue;
+using std::deque;
+using std::priority_queue;
 using std::stack;
 using std::map;
 using std::set;
-using std::pair;
+using std::multimap;
+using std::multiset;
 using std::unordered_map;
 using std::unordered_set;
-using std::pair;
+
 using std::begin;
 using std::end;
+using std::greater;
+using std::less;
+using std::max_element;
+using std::min_element;
+
+using std::pair;
+using std::tuple;
+using std::make_tuple;
+using std::get;
+
 
 using std::string;
 using std::to_string;

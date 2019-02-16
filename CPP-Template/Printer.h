@@ -16,6 +16,9 @@ public:
     void Print(const T &t, ...);
 
     template<typename T>
+    void Print(const std::set<T> &vec);
+
+    template<typename T>
     void Print(const std::vector<T> &vec);
 
     template<typename T>
@@ -25,12 +28,18 @@ public:
 
     void Print(TreeNode *root);
 
+    void Print(TreeLinkNode *root);
+
+    void Print(RandomListNode *root);
+
     void Print(const std::vector<TreeNode *> &vec);
 
 private:
     Printer();
 
-    ~Printer();
+    ~
+
+    Printer();
 };
 
 template<typename T>
@@ -40,12 +49,15 @@ void Printer::Print(const T &t, ...) {
 
 template<typename T>
 void Printer::Print(const std::vector<T> &vec) {
-    int i = 1, j = 1;
-    for (auto v: vec) {
-        std::cout << v << ' ';
-        --j;
-    }
-    std::cout << std::endl;
+    for (auto v: vec)
+        cout << v << endl;
+}
+
+template<typename T>
+void Printer::Print(const std::set<T> &vec) {
+    for (auto v: vec)
+        cout << v << ' ';
+    cout << endl;
 }
 
 template<typename T>
