@@ -6,12 +6,23 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> nums{1, 5};
-    vector<int> num{2};
-//    vector<string> another{"a==b", "b!=c", "c==a"};
-    vector<vector<int>> nu{{0, 1, 2, 0},
-                           {3, 4, 5, 2},
-                           {1, 3, 1, 5}};
+   vector<int> nums{12, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60};
+   vector<int> num{3, 0};
+   vector<string> another{"XYD", "YZE", "DEA", "FFF"};
+   vector<vector<int>> nu = {{1,3},{2,3},{3,1}};
+   vector<pair<int, int>> vp = {pair<int, int>{1, 0},
+                                pair<int, int>{0, 1}};
+   vector<pair<string, string>> equations = {{"a", "b"},
+                                             {"e", "f"},
+                                             {"b", "e"}};
+   vector<double> values = {3.4, 1.4, 2.3};
+   vector<pair<string, string>> queries = {{"b", "a"},
+                                           {"a", "f"},
+                                           {"f", "f"},
+                                           {"e", "e"},
+                                           {"c", "c"},
+                                           {"a", "c"},
+                                           {"f", "e"}};
 //    auto a = new TreeLinkNode(1);
 //    auto b = new TreeLinkNode(2);
 //    auto c = new TreeLinkNode(3);
@@ -40,26 +51,26 @@ int main() {
 //    b->random = e;
 //    d->random = b;
 
-    auto a = new TreeNode(1);
-    auto b = new TreeNode(2);
-    auto c = new TreeNode(3);
-    auto d = new TreeNode(4);
-    auto e = new TreeNode(5);
-    auto f = new TreeNode(6);
-    auto g = new TreeNode(7);
-    auto h = new TreeNode(8);
+   auto a = new TreeNode(1);
+   auto b = new TreeNode(2);
+   auto c = new TreeNode(3);
+   auto d = new TreeNode(4);
+   auto e = new TreeNode(5);
+   auto f = new TreeNode(6);
+   auto g = new TreeNode(7);
+   auto h = new TreeNode(8);
 //    auto i = new TreeLinkNode(6);
 //    auto j = new TreeLinkNode(8);
-    a->left = b;
-    a->right = c;
-    b->left = d;
-    b->right = e;
-    c->left = f;
+   a->left = b;
+   a->right = c;
+   b->left = d;
+   b->right = e;
+   c->left = f;
 //    d->left = g;
 //    f->right = h;
 
-    Solution sol;
-    auto s = sol.findRadius(nums, num);
-    Printer::GetInstance().Print(s);
-    return 0;
+   Solution sol;
+//    auto s = sol.findJudge(3,nu);
+//    Printer::GetInstance().Print(s);
+   return 0;
 }

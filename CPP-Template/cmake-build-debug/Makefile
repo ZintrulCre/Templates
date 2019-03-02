@@ -204,6 +204,33 @@ TreeSerialization.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/TreeSerialization.cpp.s
 .PHONY : TreeSerialization.cpp.s
 
+entrance.o: entrance.cpp.o
+
+.PHONY : entrance.o
+
+# target to build an object file
+entrance.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/entrance.cpp.o
+.PHONY : entrance.cpp.o
+
+entrance.i: entrance.cpp.i
+
+.PHONY : entrance.i
+
+# target to preprocess a source file
+entrance.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/entrance.cpp.i
+.PHONY : entrance.cpp.i
+
+entrance.s: entrance.cpp.s
+
+.PHONY : entrance.s
+
+# target to generate assembly for a file
+entrance.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/entrance.cpp.s
+.PHONY : entrance.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +276,9 @@ help:
 	@echo "... TreeSerialization.o"
 	@echo "... TreeSerialization.i"
 	@echo "... TreeSerialization.s"
+	@echo "... entrance.o"
+	@echo "... entrance.i"
+	@echo "... entrance.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -43,6 +43,7 @@ using std::tuple;
 using std::make_tuple;
 using std::get;
 
+using std::stoi;
 
 using std::string;
 using std::to_string;
