@@ -16,8 +16,9 @@ b.right = c
 # c.right = g
 
 nums = ["b==b", "b==e", "e==c", "d!=e"]
-array = [73, 74, 75, 71, 69, 72, 76, 73]
-matrix = [[0,2],[1,3],[2,4],[3,5],[4,6]]
+array = [1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1,
+         0, 1, 1]
+matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
 sol = Solution()
-s = sol.eraseOverlapIntervals(matrix)
+s = sol.maxProfit([7,1,5,3,6,4])
 print(s)

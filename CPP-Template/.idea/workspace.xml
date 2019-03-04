@@ -44,11 +44,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="true" current-in-tab="false">
+      <file pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            <state relative-caret-position="206">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Solution.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="80" lean-forward="true" selection-start-line="9" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="252">
+              <caret line="9" selection-start-line="9" selection-end-line="20" />
               <folding>
                 <element signature="e#47#73#0" expanded="true" />
               </folding>
@@ -72,9 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>node_queue</find>
-      <find>getInstance</find>
-      <find>CPP</find>
       <find>root</find>
       <find>int</find>
       <find>max</find>
@@ -102,6 +99,9 @@
       <find>bottom</find>
       <find>row</find>
       <find>ptr</find>
+      <find>nums.size()</find>
+      <find>repla</find>
+      <find>string</find>
     </findStrings>
     <replaceStrings>
       <replace>CPP</replace>
@@ -124,6 +124,7 @@
       <replace>}</replace>
       <replace>bot</replace>
       <replace>col</replace>
+      <replace>n</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -145,10 +146,10 @@
         <option value="$PROJECT_DIR$/DataStructure.h" />
         <option value="$PROJECT_DIR$/Printer.h" />
         <option value="$PROJECT_DIR$/Printer.cpp" />
-        <option value="$PROJECT_DIR$/Include.h" />
         <option value="$PROJECT_DIR$/entrance.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Include.h" />
         <option value="$PROJECT_DIR$/Solution.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -270,18 +271,22 @@
       <workItem from="1551061635964" duration="1483000" />
       <workItem from="1551262209279" duration="1831000" />
       <workItem from="1551489937569" duration="171000" />
+      <workItem from="1551575233432" duration="1462000" />
+      <workItem from="1551577850559" duration="917000" />
+      <workItem from="1551581142710" duration="33000" />
+      <workItem from="1551686948222" duration="2159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235441000" />
+    <option name="totallyTimeSpent" value="240012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16881259" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -290,7 +295,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.27951807" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.23975904" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.23975904" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.33614457" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.32673267" />
@@ -529,16 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Include.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#92#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/entrance.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -546,22 +541,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Include.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        <state relative-caret-position="119">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#92#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Solution.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="80" lean-forward="true" selection-start-line="9" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="252">
+          <caret line="9" selection-start-line="9" selection-end-line="20" />
           <folding>
             <element signature="e#47#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
