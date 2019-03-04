@@ -20,5 +20,5 @@ array = [1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1,
          0, 1, 1]
 matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
 sol = Solution()
-s = sol.maxProfit([7,1,5,3,6,4])
+s = sol.isIsomorphic("egg", "add")
 print(s)

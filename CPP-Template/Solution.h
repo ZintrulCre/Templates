@@ -9,13 +9,22 @@
 
 class Solution {
 public:
-    bool isValid(string &S) {
-        auto iter = S.find("abc");
-        while (iter != string::npos) {
-            S.erase(iter, 3);
-            iter = S.find("abc");
+    vector<int> findAnagrams(string s, string p) {
+        int n = s.size(), m = p.size();
+        if (n < m)
+            return {};
+        vector<int> std(26, 0), cur(26, 0), ret;
+        for (auto ch:p)
+            ++std[ch - 'a'];
+        for (int i = 0; i < m - 1; ++i)
+            ++cur[s[i] - 'a'];
+        for (int i = m - 1; i < n; ++i) {
+            ++cur[s[i] - 'a'];
+            if (cur == std)
+                ret.push_back(i);
+            --cur[s[i - m + 1] - 'a'];
         }
-        return S.empty();
+        return ret;
     }
 };
 
