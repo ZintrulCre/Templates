@@ -9,7 +9,7 @@ int main() {
     vector<int> array{7, 1, 5, 3, 6, 4};
     vector<int> num{3, 0};
     string str = "abccba";
-    vector<string> strings{"bella","label","roller"};
+    vector<string> strings{"hot", "dot", "dog", "lot", "log", "cog"};
     vector<vector<int>> nu = {{1, 3},
                               {2, 3},
                               {3, 1}};
@@ -73,7 +73,7 @@ int main() {
 //    f->right = h;
 
     Solution sol;
-    auto s = sol.isValid(str);
+    auto s = sol.ladderLength("hit", "cog", strings);
     Printer::GetInstance().Print(s);
     return 0;
 }
