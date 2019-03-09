@@ -3,36 +3,33 @@ import math
 import string
 import heapq
 import random
+import collections
 from typing import List
 from DataStructure import *
 from queue import PriorityQueue
 
 
 class Solution:
-    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-        n, count = len(beginWord), 0
-        dict = {}
-        for word in wordList:
-            dict[word] = 1
-        queue = [beginWord]
-        size = 1
-        word = beginWord
-        while len(queue) > 0:
-            word = queue[0]
-            if word == endWord:
-                break
-            queue = queue[1:]
-            for i in range(len(word)):
-                temp = word
-                for j in range(26):
-                    if chr(ord('a') + j) == word[i]:
-                        continue
-                    temp = temp[:i] + chr(ord('a') + j) + temp[i + 1:]
-                    if temp in dict:
-                        queue.append(temp)
-                        del dict[temp]
-            size -= 1
-            if size == 0:
-                size = len(queue)
-                count += 1
-        return count + 1 if word == endWord else 0
+    def partition(self, s: str) -> List[List[str]]:
+        ret = []
+        self.Backtrack(s, 0, [], ret)
+        return ret
+
+    def Backtrack(self, s, k, curr, ret):
+        if k == len(s):
+            ret.append([c for c in curr])
+            return curr
+        for i in range(k, len(s)):
+            if self.IsPalindrome(s, k, i):
+                curr.append(s[k:i + 1])
+                curr = self.Backtrack(s, i + 1, curr, ret)
+                curr.pop()
+        return curr
+
+    def IsPalindrome(self, s, i, j):
+        while j > i:
+            if s[i] != s[j]:
+                return False
+            i += 1
+            j -= 1
+        return True

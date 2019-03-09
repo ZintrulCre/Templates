@@ -6,13 +6,19 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{7, 1, 5, 3, 6, 4};
+    vector<int> array{1, 3, 2, 2, 2};
     vector<int> num{3, 0};
     string str = "abccba";
     vector<string> strings{"hot", "dot", "dog", "lot", "log", "cog"};
-    vector<vector<int>> nu = {{1, 3},
-                              {2, 3},
-                              {3, 1}};
+    vector<vector<char>> matrix = {{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+                                   {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                                   {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                                   {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                                   {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                                   {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                                   {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+                                   {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+                                   {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
     vector<pair<int, int>> vp = {pair<int, int>{1, 0},
                                  pair<int, int>{0, 1}};
     vector<pair<string, string>> equations = {{"a", "b"},
@@ -73,7 +79,7 @@ int main() {
 //    f->right = h;
 
     Solution sol;
-    auto s = sol.ladderLength("hit", "cog", strings);
-    Printer::GetInstance().Print(s);
+    sol.solveSudoku(matrix);
+    Printer::GetInstance().Print(matrix);
     return 0;
 }
