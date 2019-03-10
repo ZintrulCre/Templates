@@ -10,26 +10,19 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def partition(self, s: str) -> List[List[str]]:
-        ret = []
-        self.Backtrack(s, 0, [], ret)
-        return ret
-
-    def Backtrack(self, s, k, curr, ret):
-        if k == len(s):
-            ret.append([c for c in curr])
-            return curr
-        for i in range(k, len(s)):
-            if self.IsPalindrome(s, k, i):
-                curr.append(s[k:i + 1])
-                curr = self.Backtrack(s, i + 1, curr, ret)
-                curr.pop()
-        return curr
-
-    def IsPalindrome(self, s, i, j):
-        while j > i:
-            if s[i] != s[j]:
-                return False
-            i += 1
-            j -= 1
-        return True
+    def clumsy(self, N: int) -> int:
+        if N <= 2:
+            return N
+        sum = N * (N - 1) / (N - 2)
+        N -= 3
+        while N > 0:
+            sum += N
+            temp = 0
+            if N - 1 > 0:
+                temp = N - 1
+                if N - 2 > 0:
+                    temp *= N - 2
+                    if N - 3 > 0:
+                        temp /= N - 3
+            sum -= temp
+        return sum

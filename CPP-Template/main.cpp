@@ -6,7 +6,7 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{1, 3, 2, 2, 2};
+    vector<int> array{8, 5, 1, 7, 10, 12}, array1 = {5, 2, 6, 2, 3, 2};
     vector<int> num{3, 0};
     string str = "abccba";
     vector<string> strings{"hot", "dot", "dog", "lot", "log", "cog"};
@@ -79,7 +79,7 @@ int main() {
 //    f->right = h;
 
     Solution sol;
-    sol.solveSudoku(matrix);
-    Printer::GetInstance().Print(matrix);
+    auto s = sol.bstFromPreorder(array);
+    Printer::GetInstance().Print(s);
     return 0;
 }

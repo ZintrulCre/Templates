@@ -60,6 +60,9 @@ using std::shared_ptr;
 using std::weak_ptr;
 using std::move;
 using std::endl;
+using std::next_permutation;
+using std::prev_permutation;
+using std::stoll;
 
 
 #endif //CPP_INCLUDE_H
