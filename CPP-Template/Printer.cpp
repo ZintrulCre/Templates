@@ -59,6 +59,10 @@ void Printer::Print(RandomListNode *head) {
     std::cout << std::endl;
 }
 
+void Printer::Print(const vector<pair<int, int>> &vec) {
+    for (pair<int, int> iter:vec)
+        Print(iter.first, iter.second);
+}
 
 void Printer::Print(const std::vector<TreeNode *> &vec) {
     for (TreeNode *root: vec) {

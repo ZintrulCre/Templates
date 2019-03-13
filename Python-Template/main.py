@@ -12,19 +12,25 @@ from DataStructure import *
 # a.right = c
 # b.left = d
 
-a = ListNode(7)
+a = ListNode(1)
 b = ListNode(2)
-c = ListNode(4)
-d = ListNode(3)
+c = ListNode(3)
+d = ListNode(4)
 e = ListNode(5)
 f = ListNode(6)
-g = ListNode(4)
+g = ListNode(7)
+h = ListNode(8)
+i = ListNode(9)
+j = ListNode(10)
 a.next = b
 b.next = c
-c.next = d
+# c.next = d
 # d.next = e
-e.next = f
-f.next = g
+# e.next = f
+# f.next = g
+# g.next = h
+# h.next = i
+# i.next = j
 
 # a = TreeLinkNode(1)
 # b = TreeLinkNode(2)
@@ -41,10 +47,9 @@ f.next = g
 # c.right = g
 
 nums = ["b==b", "b==e", "e==c", "d!=e"]
-array = [1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1,
-         0, 1, 1]
+vector = [1,3,5]
 matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
 
-sol = Solution()
-s = sol.addTwoNumbers(a,e)
+# sol = Solution()
+s = NumArray(vector)
 print(s)
