@@ -9,27 +9,16 @@
 
 class Solution {
 public:
-    vector<int> topKFrequent(vector<int> &nums, int k) {
-        unordered_map<int, int> counter;
-        for (auto &m: nums)
-            ++counter[m];
-        priority_queue<int, vector<int>, greater<>> heap;
-        for (auto &freq:counter) {
-            if (heap.size() < k || freq.second > heap.top())
-                heap.push(freq.second);
-            if (heap.size() > k)
-                heap.pop();
+    int findKthLargest(vector<int> &nums, int k) {
+        priority_queue<int> min_heap;
+        for (auto &m : nums) {
+            if (min_heap.size() < k || min_heap.top() < m)
+                min_heap.push(m);
+            if (min_heap.size() > k)
+                min_heap.pop();
         }
-        vector<int> ret;
-        for (auto &freq:counter) {
-            if (freq.second >= heap.top()) {
-                ret.push_back(freq.first);
-                heap.pop();
-            }
-        }
-        return ret;
+        return min_heap.top();
     }
 };
-
 
 #endif

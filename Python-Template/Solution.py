@@ -10,16 +10,11 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        counter = collections.Counter(nums)
+    def findKthLargest(self, nums: List[int], k: int) -> int:
         min_heap = []
-        for key, value in counter.items():
-            if len(min_heap) < k or min_heap[0] < value:
-                heapq.heappush(min_heap, value)
+        for m in nums:
+            if len(min_heap) < k or min_heap[0] < m:
+                heapq.heappush(min_heap, m)
             if len(min_heap) > k:
-                heapq.heappop(min_heap)
-        ret = []
-        for key,value in counter.items():
-            if value >= min_heap[0]:
-                ret.append(key)
-        return ret
+                heapq.heappop()
+        return min_heap[0]
