@@ -6,10 +6,10 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{1, 3, 5}, array1 = {5, 2, 6, 2, 3, 2};
+    vector<int> array{1,1,1,2,2,3}, array1 = {5, 2, 6, 2, 3, 2};
     vector<int> num{3, 0};
     string str = "abccba";
-    vector<string> strings{"hot", "dot", "dog", "lot", "log", "cog"};
+    vector<string> strings{"eat","tea","tan","ate","nat","bat"};
     vector<vector<int>> matrix = {{1, 2, 2, 3, 5},
                                   {3, 2, 3, 4, 4},
                                   {2, 4, 5, 3, 1},
@@ -75,7 +75,7 @@ int main() {
 //    f->right = h;
 
     Solution sol;
-    auto s = sol.pacificAtlantic(matrix);
+    auto s = sol.groupAnagrams(strings);
     Printer::GetInstance().Print(s);
 
     return 0;

@@ -46,10 +46,29 @@ b.next = c
 # c.left = f
 # c.right = g
 
-nums = ["b==b", "b==e", "e==c", "d!=e"]
-vector = [1,3,5]
-matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
-
+# nums = ["b==b", "b==e", "e==c", "d!=e"]
+# array = [1,1,1,2,2,3]
+# matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
+#
 # sol = Solution()
-s = NumArray(vector)
-print(s)
+# s = sol.topKFrequent(array,2)
+# print(s)
+
+
+n = int(input())
+for j in range(n):
+    m = int(input())
+    awards = input()
+    awards = awards.split(' ')
+    awards.append(awards[0])
+    awards.insert(0, awards[-2])
+    res1 = [1 for _ in range(m)]
+    res2 = [1 for _ in range(m)]
+    for i in range(1, m):
+        if awards[i] > awards[i - 1]:
+            res1[i] = res1[i - 1] + 1
+    for i in range(m - 2, -1, -1):
+        if awards[i] > awards[i + 1]:
+            res2[i] = res2[i + 1] + 1
+    print(sum([max(x, y) for x, y in zip(res1, res2)]))
+
