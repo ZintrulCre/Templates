@@ -51,5 +51,5 @@ array = [1,1,1,2,2,3]
 matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
 
 sol = Solution()
-s = sol.topKFrequent(array,2)
+s = sol.bitwiseComplement(5)
 print(s)
