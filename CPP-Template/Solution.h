@@ -9,33 +9,31 @@
 
 class Solution {
 public:
-    int shipWithinDays(vector<int> &weights, int D) {
-        int low = 1, high = 25000000, mid = 0;
-        while (low < high) {
-            mid = low + (high - low) / 2;
-            if (Shippable(weights, mid, D))
-                high = mid;
-            else
-                low = mid + 1;
-        }
-        return high;
-    }
-
-    int Shippable(vector<int> &weights, int &capacity, int &D) {
-        int i = 0, day = 1;
-        while (i < weights.size() && day <= D) {
-            int residual = capacity;
-            while (i < weights.size() && residual - weights[i] >= 0) {
-                residual -= weights[i];
-                ++i;
+    vector<vector<string>> findDuplicate(vector<string> &paths) {
+        vector<vector<string>> ret;
+        unordered_map<string, vector<string>> duplicate_files;
+        for (auto &s:paths) {
+            s += ' ';
+            int start = 0;
+            int space = s.find(' ', start);
+            string path = s.substr(0, space) + '/';
+            start = space + 1;
+            while (s.find(' ', start) != string::npos) {
+                string str = s.substr(start, s.find(' ', start) - start);
+                int parentheses = str.find('(');
+                string content = str.substr(parentheses + 1, str.find(')') - parentheses - 1);
+                if (duplicate_files.find(content) == duplicate_files.end())
+                    duplicate_files.insert(pair<string, vector<string>>(content, vector<string>()));
+                duplicate_files[content].push_back(path + str.substr(0, parentheses));
+                start += str.size() + 1;
             }
-            if (i >= weights.size())
-                return true;
-            ++day;
         }
-        return false;
+        for (auto &iter:duplicate_files) {
+            if (iter.second.size() != 0)
+                ret.push_back(iter.second);
+        }
+        return ret;
     }
 };
-
 
 #endif

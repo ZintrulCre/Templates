@@ -6,10 +6,10 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{1,2,3,4,5,6,7,8,9,10}, array1 = {5, 2, 6, 2, 3, 2};
+    vector<int> array{1, 0}, array1 = {5, 2, 6, 2, 3, 2};
     vector<int> num{3, 0};
     string str = "abccba";
-    vector<string> strings{"eat", "tea", "tan", "ate", "nat", "bat"};
+    vector<string> strings{"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"};
     vector<vector<int>> matrix = {{1, 2, 2, 3, 5},
                                   {3, 2, 3, 4, 4},
                                   {2, 4, 5, 3, 1},
@@ -75,7 +75,7 @@ int main() {
 //    f->right = h;
 
     Solution sol;
-    auto s = sol.shipWithinDays(array,5);
+    auto s = sol.findDuplicate(strings);
     Printer::GetInstance().Print(s);
 
     return 0;
