@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp.dir/Printer.cpp.o"
   "CMakeFiles/cpp.dir/DataStructure.cpp.o"
   "CMakeFiles/cpp.dir/TreeSerialization.cpp.o"
-  "CMakeFiles/cpp.dir/entrance.cpp.o"
+  "CMakeFiles/cpp.dir/OJ_Entrance.cpp.o"
   "cpp.pdb"
   "cpp"
 )

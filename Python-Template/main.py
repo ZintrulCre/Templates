@@ -47,9 +47,9 @@ b.next = c
 # c.right = g
 
 nums = ["b==b", "b==e", "e==c", "d!=e"]
-array = [1,1,1,2,2,3]
-matrix = [[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]]
+array = [1, 1, 1, 2, 2, 3]
+matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.bitwiseComplement(5)
+s = sol.spiralOrder(matrix)
 print(s)

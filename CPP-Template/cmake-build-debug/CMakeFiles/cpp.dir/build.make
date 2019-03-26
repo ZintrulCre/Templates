@@ -109,18 +109,18 @@ CMakeFiles/cpp.dir/TreeSerialization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/TreeSerialization.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp -o CMakeFiles/cpp.dir/TreeSerialization.cpp.s
 
-CMakeFiles/cpp.dir/entrance.cpp.o: CMakeFiles/cpp.dir/flags.make
-CMakeFiles/cpp.dir/entrance.cpp.o: ../entrance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp.dir/entrance.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/entrance.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/entrance.cpp
+CMakeFiles/cpp.dir/OJ_Entrance.cpp.o: CMakeFiles/cpp.dir/flags.make
+CMakeFiles/cpp.dir/OJ_Entrance.cpp.o: ../OJ_Entrance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp.dir/OJ_Entrance.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/OJ_Entrance.cpp.o -c /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp
 
-CMakeFiles/cpp.dir/entrance.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/entrance.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/entrance.cpp > CMakeFiles/cpp.dir/entrance.cpp.i
+CMakeFiles/cpp.dir/OJ_Entrance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/OJ_Entrance.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp > CMakeFiles/cpp.dir/OJ_Entrance.cpp.i
 
-CMakeFiles/cpp.dir/entrance.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/entrance.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/entrance.cpp -o CMakeFiles/cpp.dir/entrance.cpp.s
+CMakeFiles/cpp.dir/OJ_Entrance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/OJ_Entrance.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp -o CMakeFiles/cpp.dir/OJ_Entrance.cpp.s
 
 # Object files for target cpp
 cpp_OBJECTS = \
@@ -128,7 +128,7 @@ cpp_OBJECTS = \
 "CMakeFiles/cpp.dir/Printer.cpp.o" \
 "CMakeFiles/cpp.dir/DataStructure.cpp.o" \
 "CMakeFiles/cpp.dir/TreeSerialization.cpp.o" \
-"CMakeFiles/cpp.dir/entrance.cpp.o"
+"CMakeFiles/cpp.dir/OJ_Entrance.cpp.o"
 
 # External object files for target cpp
 cpp_EXTERNAL_OBJECTS =
@@ -137,7 +137,7 @@ cpp: CMakeFiles/cpp.dir/main.cpp.o
 cpp: CMakeFiles/cpp.dir/Printer.cpp.o
 cpp: CMakeFiles/cpp.dir/DataStructure.cpp.o
 cpp: CMakeFiles/cpp.dir/TreeSerialization.cpp.o
-cpp: CMakeFiles/cpp.dir/entrance.cpp.o
+cpp: CMakeFiles/cpp.dir/OJ_Entrance.cpp.o
 cpp: CMakeFiles/cpp.dir/build.make
 cpp: CMakeFiles/cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cpp"

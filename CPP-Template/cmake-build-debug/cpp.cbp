@@ -89,6 +89,9 @@
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Include.h">
 			<Option target="cpp"/>
 		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp">
+			<Option target="cpp"/>
+		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.cpp">
 			<Option target="cpp"/>
 		</Unit>
@@ -111,9 +114,6 @@
 			<Option target="cpp"/>
 		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.h">
-			<Option target="cpp"/>
-		</Unit>
-		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/entrance.cpp">
 			<Option target="cpp"/>
 		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/main.cpp">
