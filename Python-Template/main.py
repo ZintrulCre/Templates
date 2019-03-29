@@ -51,5 +51,5 @@ array = [1, 1, 1, 2, 2, 3]
 matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.spiralOrder(matrix)
+s = sol.isPowerOfTwo(8)
 print(s)
