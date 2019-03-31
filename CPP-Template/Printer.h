@@ -22,6 +22,9 @@ public:
     void Print(const vector<T> &vec);
 
     template<typename T>
+    void Print(stack<T> stk);
+
+    template<typename T>
     void Print(const vector<vector<T>> &vec);
 
     void Print(ListNode *head);
@@ -51,8 +54,17 @@ void Printer::Print(const T &t, ...) {
 
 template<typename T>
 void Printer::Print(const vector<T> &vec) {
-    for (auto &v: vec)
+    for (auto v: vec)
         cout << v << endl;
+}
+
+template<typename T>
+void Printer::Print(stack<T> stk) {
+    while (!stk.empty()) {
+        cout << stk.top() << ' ';
+        stk.pop();
+    }
+    cout << endl;
 }
 
 template<typename T>
