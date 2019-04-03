@@ -91,7 +91,7 @@ int main() {
     g->next = h;
 
     Solution sol;
-    auto s = sol.baseNeg2(9);
+    auto s = sol.addStrings("1","9");
     Printer::GetInstance().Print(s);
 
     return 0;

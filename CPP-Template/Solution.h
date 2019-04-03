@@ -9,42 +9,37 @@
 
 class Solution {
 public:
-    string baseNeg2(int N) {
-        if (N == 0)
-            return "0";
-        int b = 4, product = 1, cumulative = 1;
-        while (cumulative < N) {
-            cumulative += product * b;
-            product *= b;
+    string addStrings(string num1, string num2) {
+        int m = num1.size(), n = num2.size();
+        string longer, shorter;
+        if (m >= n) {
+            longer = num1;
+            shorter = num2;
+        } else {
+            longer = num2;
+            shorter = num1;
+            swap(m, n);
         }
-        vector<int> res;
-        int temp = cumulative;
-        while (temp > 1) {
-            res.push_back(0);
-            temp >>= 1;
+        int carry = 0, i = 1;
+        while (i <= n) {
+            int sum = longer[m - i] - '0' + shorter[n - i] - '0' + carry;
+            carry = sum / 10;
+            sum %= 10;
+            longer[m - i] = sum + '0';
+            ++i;
         }
-        res.push_back(1);
-        std::reverse(res.begin(), res.end());
-        for (int i = 1; i < res.size(); i += 2) {
-            if (product == N)
+        while (carry) {
+            if (m - i < 0) {
+                longer.insert(longer.begin(), '1');
                 break;
-            if (product < N)
-                continue;
-            if (product > N) {
-                res[i] = 1;
-                product -= pow(2, res.size() - i - 1);
             }
-            if (product < N) {
-                res[i + 1] = 1;
-                product += pow(2, res.size() - i - 2);
-            }
-            if (product == N)
-                break;
+            int sum = longer[m - i] - '0' + carry;
+            carry = sum / 10;
+            sum %= 10;
+            longer[m - i] = sum + '0';
+            ++i;
         }
-        string ret;
-        for (auto &r:res)
-            ret += to_string(r);
-        return ret;
+        return longer;
     }
 };
 
