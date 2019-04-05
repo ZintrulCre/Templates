@@ -51,5 +51,5 @@ array = [1, 1, 1, 2, 2, 3]
 matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.addStrings("2467","2136")
+s = sol.mostCommonWord("Bob. hIt, baLl", ["bob", "hit"])
 print(s)

@@ -9,8 +9,7 @@ int main() {
     vector<int> array{1, 7, 5, 1, 9, 2, 5, 1}, array1 = {5, 2, 6, 2, 3, 2};
     vector<int> num{3, 0};
     string str = "abccba";
-    vector<string> strings{"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)",
-                           "root 4.txt(efgh)"};
+    vector<string> strings{"bob", "hit"};
     vector<vector<int>> matrix = {{0, 0, 0, 0},
                                   {1, 0, 1, 0},
                                   {0, 1, 1, 0},
@@ -91,7 +90,7 @@ int main() {
     g->next = h;
 
     Solution sol;
-    auto s = sol.addStrings("1","9");
+    auto s = sol.mostCommonWord("Bob. hIt, baLl", strings);
     Printer::GetInstance().Print(s);
 
     return 0;
