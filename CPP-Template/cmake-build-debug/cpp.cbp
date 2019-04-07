@@ -92,6 +92,12 @@
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp">
 			<Option target="cpp"/>
 		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Print.cpp">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Print.h">
+			<Option target="cpp"/>
+		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.cpp">
 			<Option target="cpp"/>
 		</Unit>

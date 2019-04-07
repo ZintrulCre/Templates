@@ -7,6 +7,11 @@ CMakeFiles/cpp.dir/DataStructure.cpp.o: ../Include.h
 
 CMakeFiles/cpp.dir/OJ_Entrance.cpp.o: ../OJ_Entrance.cpp
 
+CMakeFiles/cpp.dir/Print.cpp.o: ../DataStructure.h
+CMakeFiles/cpp.dir/Print.cpp.o: ../Include.h
+CMakeFiles/cpp.dir/Print.cpp.o: ../Print.cpp
+CMakeFiles/cpp.dir/Print.cpp.o: ../Print.h
+
 CMakeFiles/cpp.dir/Printer.cpp.o: ../DataStructure.h
 CMakeFiles/cpp.dir/Printer.cpp.o: ../Include.h
 CMakeFiles/cpp.dir/Printer.cpp.o: ../Printer.cpp
@@ -19,6 +24,7 @@ CMakeFiles/cpp.dir/TreeSerialization.cpp.o: ../TreeSerialization.h
 
 CMakeFiles/cpp.dir/main.cpp.o: ../DataStructure.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Include.h
+CMakeFiles/cpp.dir/main.cpp.o: ../Print.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Printer.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Solution.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Sort/MergeSort.h

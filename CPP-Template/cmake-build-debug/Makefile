@@ -177,6 +177,33 @@ OJ_Entrance.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/OJ_Entrance.cpp.s
 .PHONY : OJ_Entrance.cpp.s
 
+Print.o: Print.cpp.o
+
+.PHONY : Print.o
+
+# target to build an object file
+Print.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Print.cpp.o
+.PHONY : Print.cpp.o
+
+Print.i: Print.cpp.i
+
+.PHONY : Print.i
+
+# target to preprocess a source file
+Print.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Print.cpp.i
+.PHONY : Print.cpp.i
+
+Print.s: Print.cpp.s
+
+.PHONY : Print.s
+
+# target to generate assembly for a file
+Print.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Print.cpp.s
+.PHONY : Print.cpp.s
+
 Printer.o: Printer.cpp.o
 
 .PHONY : Printer.o
@@ -273,6 +300,9 @@ help:
 	@echo "... OJ_Entrance.o"
 	@echo "... OJ_Entrance.i"
 	@echo "... OJ_Entrance.s"
+	@echo "... Print.o"
+	@echo "... Print.i"
+	@echo "... Print.s"
 	@echo "... Printer.o"
 	@echo "... Printer.i"
 	@echo "... Printer.s"
