@@ -10,11 +10,14 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def addDigits(self, num: int) -> int:
-        while num > 9:
-            temp, sum = num, 0
-            while temp > 0:
-                sum += temp % 10
-                temp //= 10
-            num = sum
-        return num
+    def videoStitching(self, clips: List[List[int]], T: int) -> int:
+        clips.sort()
+        res, start, end, i = 0, 0, 0, 0
+        while end < T:
+            while i < len(clips) and clips[i][0] <= start:
+                end = max(end, clips[i][1])
+            if start == end:
+                return -1
+            res += 1
+            start = end
+        return res

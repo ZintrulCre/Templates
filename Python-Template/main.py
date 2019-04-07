@@ -51,5 +51,5 @@ array = [1, 1, 1, 2, 2, 3]
 matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.mostCommonWord("Bob. hIt, baLl", ["bob", "hit"])
+s = sol.findRelativeRanks([3,6,7,2,5,1,4])
 print(s)
