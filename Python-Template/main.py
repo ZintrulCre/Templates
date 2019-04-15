@@ -47,9 +47,9 @@ b.next = c
 # c.right = g
 
 nums = ["b==b", "b==e", "e==c", "d!=e"]
-array = [1, 1, 1, 2, 2, 3]
+array = [1,2,1,3,2,5]
 matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.findRelativeRanks([3,6,7,2,5,1,4])
+s = sol.singleNumber(array)
 print(s)

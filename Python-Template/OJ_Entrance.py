@@ -1,28 +1,25 @@
-def GCD(a: int, b: int) -> int:
-    if b == 0:
-        return a
-    return GCD(b, a % b)
-
-
 T = int(input())
 for t in range(1, T + 1):
-    N, L = map(int, input().split())
-    product = list(map(int, input().split()))
-    res = [0 for _ in range(L + 1)]
-    pos = -1
-    for i in range(L - 1):
-        if product[i] != product[i + 1]:
-            res[i + 1] = GCD(product[i], product[i + 1])
-            pos = i + 1
-            break
-    for i in range(pos + 1, L + 1):
-        res[i] = product[i - 1] // res[i - 1]
-    for i in range(pos - 1, -1, -1):
-        res[i] = product[i] // res[i + 1]
-    match = []
-    for m in res:
-        if m not in match:
-            match.append(m)
-    match.sort()
-    ret = [chr(match.index(res[i]) + ord('A')) for i in range(len(res))]
-    print("Case #{t}: {str}".format(t=t, str="".join(ret)))
+    num = 0
+    N = int(input())
+    words = []
+    for i in range(N):
+        words.append(input()[::-1])
+    flag = [False for _ in range(N)]
+    exist = set()
+    for i in range(len(words)):
+        word = words[i]
+        for j in range(len(word), 0, -1):
+            if flag[i]:
+                break
+            for k in range(len(words)):
+                another = words[k]
+                if i == k:
+                    continue
+                if j <= len(another) and word[:j] not in exist and word[:j] == another[:j] \
+                        and not flag[i] and not flag[k]:
+                    num += 2
+                    exist.add(word[:j])
+                    flag[i], flag[k] = True, True
+                    break
+    print("Case #{}: {}".format(str(t), num))

@@ -9,24 +9,48 @@
 #include "TreeSerialization.h"
 
 class Solution {
+    vector<double> p;
+    int n;
+    double res;
+    bool flag = false;
 public:
-    int videoStitching(vector<vector<int>> &clips, int T) {
-        int n = clips.size();
-        sort(begin(clips), end(clips));
-        vector<int> DP(T);
-        int res = 0, start = 0, end = 0, i = 0;
-        Print(clips);
-        while (end < T) {
-            while (i < n && clips[i][0] <= start) {
-                end = max(end, clips[i][1]);
-                ++i;
+    string minimizeError(vector<string> &prices, int target) {
+        this->n = prices.size();
+        this->p = vector<double>(n);
+        this->res = 0.0;
+        for (int i = 0; i < n; ++i)
+            this->p[i] = stof(prices[i]);
+        BackTracking(0, target);
+        if (!flag)
+            return "-1";
+        string temp = to_string(res);
+        int cnt = 0;
+        int i = 0;
+        while (i < temp.size() && temp[i] != '.')
+            ++i;
+        return temp.substr(0, i + 4);
+    }
+
+    bool BackTracking(int m, int target) {
+        if (m == n) {
+            if (target == 0) {
+                flag = true;
+                return true;
             }
-            if (start == end)
-                return -1;
-            ++res;
-            start = end;
+            return false;
         }
-        return res;
+        int k = static_cast<int>(p[m]);
+        if (BackTracking(m + 1, target - k)) {
+            res += p[m] - k * 1.0;
+            return true;
+        }
+        if (p[m] - static_cast<int>(p[m]) * 1.0 > 1e-5) {
+            if (BackTracking(m + 1, target - k - 1)) {
+                res += (k + 1) * 1.0 - p[m];
+                return true;
+            }
+        }
+        return false;
     }
 };
 
