@@ -6,9 +6,7 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{44, 46, 22, 68, 45, 66, 43, 9, 37, 30, 50, 67, 32, 47, 44, 11, 15, 4, 11, 6, 20, 64, 54, 54, 61,
-                      63, 23, 43, 3, 12, 51, 61, 16, 57, 14, 12, 55, 17, 18, 25, 19, 28, 45, 56, 29, 39, 52, 8, 1, 21,
-                      17, 21, 23, 70, 51, 61, 21, 52, 25, 28}, array1 = {0, 5, 10, 15, 20, 25, 30};
+    vector<int> array{23456,2346,2135,1235,341,12,22,2,2,1,2,3,3,347,5774574,8488,44,5623,2534,345,46,56647};
     vector<int> num{3, 0};
     string str = "abc", str1 = "acdbc";
     vector<string> strings{"2.000", "2.000", "2.000", "2.000", "2.000"};
@@ -88,7 +86,7 @@ int main() {
 //    g->next = h;
 
     Solution sol;
-    auto s = sol.minimizeError(strings, 11);
+    auto s = sol.sortArray(array);
     Printer::GetInstance().Print(s);
 
 

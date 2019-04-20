@@ -1,7 +1,7 @@
 #ifndef CPP_SOLUTION_H
 #define CPP_SOLUTION_H
 
-#include "Sort/TempSort.h"
+#include "Sort/Sort.h"
 #include "Include.h"
 #include "Print.h"
 #include "Printer.h"
@@ -9,49 +9,31 @@
 #include "TreeSerialization.h"
 
 class Solution {
-    vector<double> p;
-    int n;
-    double res;
-    bool flag = false;
 public:
-    string minimizeError(vector<string> &prices, int target) {
-        this->n = prices.size();
-        this->p = vector<double>(n);
-        this->res = 0.0;
-        for (int i = 0; i < n; ++i)
-            this->p[i] = stof(prices[i]);
-        BackTracking(0, target);
-        if (!flag)
-            return "-1";
-        string temp = to_string(res);
-        int cnt = 0;
-        int i = 0;
-        while (i < temp.size() && temp[i] != '.')
-            ++i;
-        return temp.substr(0, i + 4);
+    vector<int> sortArray(vector<int> &nums) {
+        QuickSort(nums, 0, nums.size());
+        return nums;
     }
 
-    bool BackTracking(int m, int target) {
-        if (m == n) {
-            if (target == 0) {
-                flag = true;
-                return true;
-            }
-            return false;
+
+    template<typename T>
+    void QuickSort(vector<T> &nums, int x, int y) {
+        if (x >= y - 1)
+            return;
+        int pivot = nums[x], i = x, j = y - 1;
+        while (i < j) {
+            while (i < j && nums[j] >= pivot)
+                --j;
+            while (i < j && nums[i] <= pivot)
+                ++i;
+            swap(nums[i], nums[j]);
+            if (i == j && nums[i] < nums[x])
+                swap(nums[x], nums[i]);
         }
-        int k = static_cast<int>(p[m]);
-        if (BackTracking(m + 1, target - k)) {
-            res += p[m] - k * 1.0;
-            return true;
-        }
-        if (p[m] - static_cast<int>(p[m]) * 1.0 > 1e-5) {
-            if (BackTracking(m + 1, target - k - 1)) {
-                res += (k + 1) * 1.0 - p[m];
-                return true;
-            }
-        }
-        return false;
+        QuickSort(nums, x, i);
+        QuickSort(nums, i + 1, y);
     }
 };
+
 
 #endif

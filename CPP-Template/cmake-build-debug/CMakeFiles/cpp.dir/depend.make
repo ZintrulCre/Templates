@@ -27,9 +27,10 @@ CMakeFiles/cpp.dir/main.cpp.o: ../Include.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Print.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Printer.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Solution.h
+CMakeFiles/cpp.dir/main.cpp.o: ../Sort/HeapSort.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Sort/MergeSort.h
+CMakeFiles/cpp.dir/main.cpp.o: ../Sort/QuickSort.h
 CMakeFiles/cpp.dir/main.cpp.o: ../Sort/Sort.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Sort/TempSort.h
 CMakeFiles/cpp.dir/main.cpp.o: ../TreeSerialization.h
 CMakeFiles/cpp.dir/main.cpp.o: ../main.cpp
 
