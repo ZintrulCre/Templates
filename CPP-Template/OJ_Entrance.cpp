@@ -1,55 +1,57 @@
-//#include <iostream>
-//#include <cmath>
-//#include <cstdio>
-//#include <math.h>
-//#include <limits>
-//#include <algorithm>
-//#include <vector>
-//#include <stack>
-//#include <queue>
-//#include <string>
-//#include <map>
-//#include <set>
-//#include <unordered_map>
-//#include <unordered_set>
-//
-//#include "Print.h"
-//
-//using namespace std;
-//
-//
-//int main() {
-//    int total_test_case_number;
-//    cin >> total_test_case_number;
-//    for (int case_number = 1; case_number <= total_test_case_number; ++case_number) {
-//        int N, sum = 0, max_len = 0;
-//        cin >> N;
-//        vector<string> words(N);
-//        for (int m = 0; m < N; ++m) {
-//            cin >> words[m];
-//            max_len = max(max_len, static_cast<int>(words[m].size()));
-//            reverse(words[m].begin(), words[m].end());
-//        }
-//        unordered_map<string, int> status;
-//        vector<bool> visited(N, false);
-//        int total = 0;
-//        for (int len = max_len; len > 0; --len) {
-//            for (int m = 0; m < N; ++m) {
-//                if (visited[m] || words[m].size() < len)
-//                    continue;
-//                string str = words[m].substr(0, len);
-//                if (status.find(str) != status.end()) {
-//                    if (status[str] != -1) {
-//                        sum += 2;
-//                        visited[status[str]] = true, visited[m] = true;
-//                        status[str] = -1;
-//                    }
-//                } else
-//                    status[str] = m;
-//            }
-//        }
-//        printf("Case #%d: %d\n", case_number, sum);
-//    }
-//
-//    return 0;
-//}
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+#include <math.h>
+#include <limits>
+#include <algorithm>
+#include <vector>
+#include <stack>
+#include <queue>
+#include <string>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+
+using namespace std;
+
+struct Stone {
+    int seconds;
+    int energy;
+    int lost;
+};
+vector<Stone> stones;
+vector<vector<int>> dp;
+int N;
+
+void solve(const int &T) {
+    scanf("%d", &N);
+    stones = vector<Stone>(N);
+    int total_time = 0;
+    for (int i = 0; i < N; ++i)
+        scanf("%d %d %d", &stones[i].seconds, &stones[i].energy, &stones[i].lost);
+    sort(stones.begin(), stones.end(), [](const Stone &s1, const Stone &s2) {
+        return s1.lost > s2.lost;
+    });
+    int res = 0;
+    dp = vector<vector<int>>(N + 1, vector<int>(stones[0].seconds * N, -1));
+    for (int i = 1; i <= N; ++i) {
+        dp[i - 1][0] = 0;
+        for (int j = 0; j < stones[i - 1].seconds; ++j)
+            dp[i][j] = dp[i - 1][j];
+        for (int j = stones[i - 1].seconds; j < dp[i - 1].size(); ++j) {
+            dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - stones[i - 1].seconds] + stones[i - 1].energy -
+                                         (j - stones[i - 1].seconds) * stones[i - 1].lost);
+            res = max(res, dp[i][j]);
+        }
+    }
+    printf("Case #%d: %d\n", T, res);
+}
+
+int main() {
+    int T;
+    scanf("%d", &T);
+    for (int t = 1; t <= T; ++t)
+        solve(t);
+    return 0;
+}

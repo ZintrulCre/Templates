@@ -8,30 +8,26 @@
 #include "DataStructure.h"
 #include "TreeSerialization.h"
 
+
 class Solution {
 public:
-    vector<int> sortArray(vector<int> &nums) {
-        QuickSort(nums, 0, nums.size());
-        return nums;
-    }
-
-
-    template<typename T>
-    void QuickSort(vector<T> &nums, int x, int y) {
-        if (x >= y - 1)
-            return;
-        int pivot = nums[x], i = x, j = y - 1;
-        while (i < j) {
-            while (i < j && nums[j] >= pivot)
-                --j;
-            while (i < j && nums[i] <= pivot)
-                ++i;
-            swap(nums[i], nums[j]);
-            if (i == j && nums[i] < nums[x])
-                swap(nums[x], nums[i]);
+    int maxSumTwoNoOverlap(vector<int> &A, int L, int M) {
+        int n = A.size(), res = 0, left = 0, right = 0;
+        vector<int> prefix(n + 1);
+        for (int i = 1; i <= n; ++i)
+            prefix[i] = prefix[i - 1] + A[i - 1];
+        for (int i = L + M; i <= n; ++i) {
+            left = max(left, prefix[i - M] - prefix[i - M - L]);
+            right = prefix[i] - prefix[i - M];
+            res = max(res, left + right);
         }
-        QuickSort(nums, x, i);
-        QuickSort(nums, i + 1, y);
+        left = 0, right = 0;
+        for (int i = L + M; i <= n; ++i) {
+            left = max(left, prefix[i - L] - prefix[i - M - L]);
+            right = prefix[i] - prefix[i - L];
+            res = max(res, left + right);
+        }
+        return res;
     }
 };
 

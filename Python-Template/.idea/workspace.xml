@@ -6,12 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="00dc23d0-2686-4ae4-a9e3-e5a59fff924f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/Include.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/Include.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/OJ_Entrance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/OJ_Entrance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/Solution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/Solution.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/DataStructure.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/DataStructure.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Print.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Print.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Printer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/Printer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/TreeSerialization.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/TreeSerialization.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1456">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="1508">
+              <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -36,20 +55,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OJ_Entrance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Solution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="232">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,15 +134,15 @@
       <list>
         <option value="$PROJECT_DIR$/Include.py" />
         <option value="$PROJECT_DIR$/DataStructure.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/OJ_Entrance.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Solution.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="2048" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -139,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,12 +163,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -173,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.OJ_Entrance">
+  <component name="RunManager" selected="Python.main">
     <configuration name="OJ_Entrance" type="PythonConfigurationType" factoryName="Python">
       <module name="Python-Template" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,22 +319,23 @@
       <workItem from="1555225117087" duration="325000" />
       <workItem from="1555416748619" duration="1694000" />
       <workItem from="1555507407665" duration="371000" />
+      <workItem from="1555837484008" duration="1167000" />
+      <workItem from="1555926347964" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131877000" />
+    <option name="totallyTimeSpent" value="134265000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0828125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10418744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20756547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25323474" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.314258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -358,25 +375,13 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_Template$OJ_Entrance.coverage" NAME="OJ_Entrance Coverage Results" MODIFIED="1555138588226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Template$main.coverage" NAME="main Coverage Results" MODIFIED="1555071524561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Template$OJ_Entrance.coverage" NAME="OJ_Entrance Coverage Results" MODIFIED="1555837635066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Template$main.coverage" NAME="main Coverage Results" MODIFIED="1555837619209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Include.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/heapq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/heapq.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py" />
     <entry file="file://$PROJECT_DIR$/DataStructure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -399,34 +404,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/OJ_Entrance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        <state relative-caret-position="323">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="1508">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OJ_Entrance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="232">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

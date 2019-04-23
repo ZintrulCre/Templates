@@ -51,5 +51,5 @@ array = [1,2,1,3,2,5]
 matrix = [[2,5],[8,4],[0,-1]]
 
 sol = Solution()
-s = sol.singleNumber(array)
+s = sol.canPartitionKSubsets(array)
 print(s)

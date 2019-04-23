@@ -10,23 +10,15 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
-        total = sum(nums)
-        if total % k != 0 or max(nums) > total // k:
-            return False
-
-        def BackTracking(sum, k, curr, nums, visited):
-            if k == 0:
-                return True
-            if curr == 0:
-                return BackTracking(sum, k - 1, sum, nums, visited)
-            for i in range(len(nums)):
-                if not visited[i] and curr - nums[i] >= 0:
-                    visited[i] = True
-                    if BackTracking(sum, k, curr - nums[i], nums, visited):
-                        return True
-                    visited[i] = False
-            return False
-
-        visited = [False for _ in range(len(nums))]
-        return BackTracking(sum / k, )
+    def maxSumTwoNoOverlap(self, A: List[int], L: int, M: int) -> int:
+        prefix, n, res, left = [0 for _ in range(len(A))], len(A) + 1, 0, 0
+        for i in range(1, n):
+            prefix[i] = prefix[i - 1] + A[i - 1]
+        for i in range(L + M, n):
+            left = max(left, prefix[i - M] - prefix[i - M - L])
+            res = max(res, left + prefix[i] - prefix[i - M])
+        left = 0
+        for i in range(L + M, n):
+            left = max(left, prefix[i - L] - prefix[i - M - L])
+            res = max(res, left + prefix[i] - prefix[i - L])
+        return res

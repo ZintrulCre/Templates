@@ -49,6 +49,7 @@ using std::to_string;
 using std::replace;
 
 using std::swap;
+using std::reverse;
 using std::max;
 using std::min;
 using std::cin;

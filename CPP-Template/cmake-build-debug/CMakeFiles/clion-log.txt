@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template
+"/Users/zhengyuchen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.69/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/cmake-build-debug
