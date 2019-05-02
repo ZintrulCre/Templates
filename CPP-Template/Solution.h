@@ -8,28 +8,27 @@
 #include "DataStructure.h"
 #include "TreeSerialization.h"
 
-
 class Solution {
 public:
-    int maxSumTwoNoOverlap(vector<int> &A, int L, int M) {
-        int n = A.size(), res = 0, left = 0, right = 0;
-        vector<int> prefix(n + 1);
-        for (int i = 1; i <= n; ++i)
-            prefix[i] = prefix[i - 1] + A[i - 1];
-        for (int i = L + M; i <= n; ++i) {
-            left = max(left, prefix[i - M] - prefix[i - M - L]);
-            right = prefix[i] - prefix[i - M];
-            res = max(res, left + right);
+    string replaceWords(vector<string> &dict, string sentence) {
+        unordered_set<string> d(dict.begin(), dict.end());
+        sentence += ' ';
+        int start = 0, end = sentence.find(' ');
+        while (end != -1) {
+            string str = sentence.substr(start, end - start);
+            for (int i = 0; i < str.size(); ++i) {
+                if (d.find(str.substr(0, i + 1)) != d.end()) {
+                    sentence.replace(sentence.begin() + start, sentence.begin() + end, str.substr(0, i + 1));
+                    end = start + i + 1;
+                    break;
+                }
+            }
+            start = end + 1;
+            end = sentence.find(' ', start);
         }
-        left = 0, right = 0;
-        for (int i = L + M; i <= n; ++i) {
-            left = max(left, prefix[i - L] - prefix[i - M - L]);
-            right = prefix[i] - prefix[i - L];
-            res = max(res, left + right);
-        }
-        return res;
+        sentence.erase(sentence.end() - 1);
+        return sentence;
     }
 };
-
 
 #endif
