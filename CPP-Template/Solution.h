@@ -10,24 +10,18 @@
 
 class Solution {
 public:
-    string replaceWords(vector<string> &dict, string sentence) {
-        unordered_set<string> d(dict.begin(), dict.end());
-        sentence += ' ';
-        int start = 0, end = sentence.find(' ');
-        while (end != -1) {
-            string str = sentence.substr(start, end - start);
-            for (int i = 0; i < str.size(); ++i) {
-                if (d.find(str.substr(0, i + 1)) != d.end()) {
-                    sentence.replace(sentence.begin() + start, sentence.begin() + end, str.substr(0, i + 1));
-                    end = start + i + 1;
-                    break;
-                }
+    int minScoreTriangulation(vector<int> &A) {
+        int n = A.size(), res = INT_MAX;
+        for (int i = 0; i < A.size() - 2; ++i) {
+            int j = i + 1, k = i + 2, score = 0;
+            for (int m = 0; m < n - 2; ++m) {
+                score += A[i] * A[j >= n ? j - n : j] * A[k >= n ? k - n : k];
+                ++j;
+                ++k;
             }
-            start = end + 1;
-            end = sentence.find(' ', start);
+            res = min(res, score);
         }
-        sentence.erase(sentence.end() - 1);
-        return sentence;
+        return res;
     }
 };
 

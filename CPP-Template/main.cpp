@@ -6,7 +6,7 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{0, 6, 5, 2, 2, 5, 1, 9, 4};
+    vector<int> array{1,2,3};
     vector<int> num{3, 0};
     string str = "abc", str1 = "acdbc";
     vector<string> strings{"cat", "bat", "rat"};
@@ -62,20 +62,22 @@ int main() {
 //    b->random = e;
 //    d->random = b;
 
-    auto a = new TreeNode(8);
-    auto b = new TreeNode(3);
-    auto c = new TreeNode(10);
-    auto d = new TreeNode(1);
-    auto e = new TreeNode(6);
-//    auto f = new TreeNode(0);
-//    auto g = new TreeNode(1);
+    auto a = new TreeNode(4);
+    auto b = new TreeNode(1);
+    auto c = new TreeNode(6);
+    auto d = new TreeNode(2);
+    auto e = new TreeNode(5);
+    auto f = new TreeNode(7);
+    auto g = new TreeNode(3);
+    auto h = new TreeNode(8);
     a->left = b;
-//    a->right = c;
+    a->right = c;
     b->left = d;
-    b->right = e;
-//    c->left = f;
-//    c->right = g;
-//    f->right = h;
+    b->right = d;
+    c->left = e;
+    c->right = f;
+    d->right = g;
+    f->right = h;
 
 //    auto a = new ListNode(3);
 //    auto b = new ListNode(3);
@@ -94,8 +96,8 @@ int main() {
 //    g->next = h;
 
     Solution sol;
-    auto s = sol.replaceWords(strings, "the cattle was rattled by the battery");
-    Printer::GetInstance().Print(s);
+    auto s = sol.minScoreTriangulation(array);
+    Print(s);
 
     return 0;
 }
