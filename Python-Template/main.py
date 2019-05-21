@@ -46,10 +46,10 @@ b.next = c
 # c.left = f
 # c.right = g
 
-nums = ["b==b", "b==e", "e==c", "d!=e"]
-array = [1,2,1,3,2,5]
-matrix = [[2,5],[8,4],[0,-1]]
+nums = ["ba", "bca", "bda", "a", "b", "bdca"]
+array =[2,7,4,1,8,1]
+matrix = [[2, 5], [8, 4], [0, -1]]
 
 sol = Solution()
-s = sol.canPartitionKSubsets(array)
+s = sol.nthUglyNumber(11)
 print(s)

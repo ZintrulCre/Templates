@@ -6,15 +6,6 @@
 #include "TreeSerialization.h"
 
 int main() {
-    vector<int> array{1,2,3};
-    vector<int> num{3, 0};
-    string str = "abc", str1 = "acdbc";
-    vector<string> strings{"cat", "bat", "rat"};
-    vector<vector<int>> matrix = {{0, 0},
-                                  {1, 0},
-                                  {2, 0},
-                                  {1, 1}}, matrix1 = {{1, 2},
-                                                      {3, 3}};
     vector<pair<int, int>> vp = {
             pair<int, int>{1, 0},
             pair<int, int>{0, 1}
@@ -95,8 +86,24 @@ int main() {
 //    f->next = g;
 //    g->next = h;
 
+    vector<vector<int>> array{{4, 1},
+                              {4, 2},
+                              {4, 3},
+                              {2, 5},
+                              {1, 2},
+                              {1, 5}};
+    vector<int> num{2,7,13,19};
+    string str1 = "missisipi", str2 = "missisipi";
+    vector<string> strings{"flower", "flow", "flight"};
+    vector<vector<int>> matrix = {{7, 0},
+                                  {4, 4},
+                                  {7, 1},
+                                  {5, 0},
+                                  {6, 1},
+                                  {5, 2}}, matrix1 = {{1, 2},
+                                                      {3, 3}};
     Solution sol;
-    auto s = sol.minScoreTriangulation(array);
+    auto s = sol.nthUglyNumber(11);
     Print(s);
 
     return 0;

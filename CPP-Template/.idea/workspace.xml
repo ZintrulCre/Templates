@@ -51,7 +51,10 @@
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
-              <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+              <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Solution.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="21" column="22" selection-start-line="10" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="609">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#47#69#0" expanded="true" />
               </folding>
@@ -72,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>i - j</find>
       <find>...</find>
       <find>quick</find>
       <find>linkno</find>
@@ -97,11 +99,12 @@
       <find>solution</find>
       <find>oj_</find>
       <find>Toolbox</find>
-      <find>[</find>
-      <find>]</find>
       <find>e</find>
       <find>f</find>
       <find>treenode</find>
+      <find>neralallow</find>
+      <find>[</find>
+      <find>]</find>
     </findStrings>
     <replaceStrings>
       <replace>n</replace>
@@ -128,12 +131,12 @@
       <replace>j</replace>
       <replace>m</replace>
       <replace>i - 1</replace>
-      <replace>{</replace>
-      <replace>}</replace>
       <replace>x1</replace>
       <replace>x2</replace>
       <replace>x3</replace>
       <replace>y3</replace>
+      <replace>{</replace>
+      <replace>}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -351,28 +354,40 @@
       <workItem from="1556685493866" duration="469000" />
       <workItem from="1556687717349" duration="1974000" />
       <workItem from="1556802001502" duration="503000" />
-      <workItem from="1557023465994" duration="3921000" />
+      <workItem from="1557023465994" duration="5044000" />
+      <workItem from="1557132686538" duration="1352000" />
+      <workItem from="1557200177771" duration="1343000" />
+      <workItem from="1557221258012" duration="6486000" />
+      <workItem from="1557317332255" duration="2019000" />
+      <workItem from="1557368893211" duration="2986000" />
+      <workItem from="1557450555620" duration="1269000" />
+      <workItem from="1557553525212" duration="750000" />
+      <workItem from="1557627914416" duration="3896000" />
+      <workItem from="1558093265656" duration="708000" />
+      <workItem from="1558169366966" duration="1092000" />
+      <workItem from="1558249759569" duration="521000" />
+      <workItem from="1558343693961" duration="2584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421996000" />
+    <option name="totallyTimeSpent" value="448125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15304087" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17098704" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32994455" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.28373381" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.31608135" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.31608135" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.34380776" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.32673267" />
@@ -422,9 +437,14 @@
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/OJ_Entrance.cpp</url>
+          <line>50</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Solution.h</url>
-          <line>14</line>
-          <option name="timeStamp" value="145" />
+          <line>17</line>
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -527,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="2223" selection-start-line="2223" selection-end-line="2223" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataStructure.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -584,13 +597,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sort/TempSort.h" />
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="1534" selection-start-line="1534" selection-end-line="1534" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sort/MergeSort.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -662,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OJ_Entrance.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="13" selection-start-column="2" selection-end-line="56" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Printer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -711,17 +710,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="867" column="4" selection-start-line="867" selection-start-column="4" selection-end-line="867" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OJ_Entrance.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="1280" selection-start-line="1280" selection-end-line="1280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/new">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="279" column="6" lean-forward="true" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+          <folding>
+            <element signature="e#11203#11243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Solution.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="22" selection-start-line="10" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="609">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#47#69#0" expanded="true" />
           </folding>

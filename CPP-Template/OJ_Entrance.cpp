@@ -15,37 +15,66 @@
 //
 //using namespace std;
 //
-//struct Stone {
-//    int seconds;
-//    int energy;
-//    int lost;
-//};
-//vector<Stone> stones;
-//vector<vector<int>> dp;
-//int N;
+//char Decide(const char &R, const char &P, const char &S) {
+//    if (R && P && S)
+//        return 'X';
+//    if (R && P)
+//        return 'P';
+//    if (R && S)
+//        return 'R';
+//    if (P && S)
+//        return 'S';
+//    if (R)
+//        return 'P';
+//    if (P)
+//        return 'S';
+//    return 'R';
+//}
 //
-//void solve(const int &T) {
-//    scanf("%d", &N);
-//    stones = vector<Stone>(N);
-//    int total_time = 0;
-//    for (int i = 0; i < N; ++i)
-//        scanf("%d %d %d", &stones[i].seconds, &stones[i].energy, &stones[i].lost);
-//    sort(stones.begin(), stones.end(), [](const Stone &s1, const Stone &s2) {
-//        return s1.lost > s2.lost;
-//    });
-//    int res = 0;
-//    dp = vector<vector<int>>(N + 1, vector<int>(stones[0].seconds * N, -1));
-//    for (int i = 1; i <= N; ++i) {
-//        dp[i - 1][0] = 0;
-//        for (int j = 0; j < stones[i - 1].seconds; ++j)
-//            dp[i][j] = dp[i - 1][j];
-//        for (int j = stones[i - 1].seconds; j < dp[i - 1].size(); ++j) {
-//            dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - stones[i - 1].seconds] + stones[i - 1].energy -
-//                                         (j - stones[i - 1].seconds) * stones[i - 1].lost);
-//            res = max(res, dp[i][j]);
+//bool Defeate(const char &current, const char &opponent) {
+//    return (current == 'R' && opponent == 'S') || (current == 'S' && opponent == 'P') ||
+//           (current == 'P' && opponent == 'R');
+//}
+//
+//void solve(const int &t) {
+//    int A;
+//    scanf("%d", &A);
+//    int i = 0;
+//    vector<string> opponent(A);
+//    vector<bool> defeated(A, false);
+//    bool R, P, S;
+//    string res;
+//    for (int a = 0; a < A; ++a)
+//        cin >> opponent[a];
+//    while (true) {
+//        int current_opponent = 0;
+//        R = false, P = false, S = false;
+//        for (int a = 0; a < A; ++a) {
+//            if (!defeated[a]) {
+//                ++current_opponent;
+//                if (opponent[a][i % opponent[a].size()] == 'R')
+//                    R = true;
+//                else if (opponent[a][i % opponent[a].size()] == 'P')
+//                    P = true;
+//                else
+//                    S = true;
+//            }
 //        }
+//        if (current_opponent == 0)
+//            break;
+//        char result = Decide(R, P, S);
+//        if (result == 'X') {
+//            res = "IMPOSSIBLE";
+//            break;
+//        }
+//        res += result;
+//        for (int a = 0; a < A; ++a) {
+//            if (!defeated[a] && Defeate(result, opponent[a][i % opponent[a].size()]))
+//                defeated[a] = true;
+//        }
+//        ++i;
 //    }
-//    printf("Case #%d: %d\n", T, res);
+//    printf("Case #%d: %s\n", t, res.c_str());
 //}
 //
 //int main() {

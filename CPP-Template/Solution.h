@@ -10,18 +10,19 @@
 
 class Solution {
 public:
-    int minScoreTriangulation(vector<int> &A) {
-        int n = A.size(), res = INT_MAX;
-        for (int i = 0; i < A.size() - 2; ++i) {
-            int j = i + 1, k = i + 2, score = 0;
-            for (int m = 0; m < n - 2; ++m) {
-                score += A[i] * A[j >= n ? j - n : j] * A[k >= n ? k - n : k];
-                ++j;
-                ++k;
-            }
-            res = min(res, score);
+    int nthUglyNumber(int n) {
+        vector<int> primes{2, 3, 5};
+        int m = primes.size();
+        vector<int> factor(primes.size(), 0), res(n, 1);
+        for (int i = 1; i < n; ++i) {
+            res[i] = INT_MAX;
+            for (int j = 0; j < m; ++j)
+                res[i] = min(res[i], primes[j] * res[factor[j]]);
+            for (int j = 0; j < m; ++j)
+                if (primes[j] * res[factor[j]] == res[i])
+                    ++factor[j];
         }
-        return res;
+        return res.back();
     }
 };
 
