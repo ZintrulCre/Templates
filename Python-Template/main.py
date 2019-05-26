@@ -51,5 +51,5 @@ array =[2,7,4,1,8,1]
 matrix = [[2, 5], [8, 4], [0, -1]]
 
 sol = Solution()
-s = sol.nthUglyNumber(11)
+s = sol.prevPermOpt1([3,1,1,3])
 print(s)

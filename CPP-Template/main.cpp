@@ -92,18 +92,14 @@ int main() {
                               {2, 5},
                               {1, 2},
                               {1, 5}};
-    vector<int> num{2,7,13,19};
+    vector<int> num{3,1,1,3}, num1{1, 0, 1, 1};
     string str1 = "missisipi", str2 = "missisipi";
     vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{7, 0},
-                                  {4, 4},
-                                  {7, 1},
-                                  {5, 0},
-                                  {6, 1},
-                                  {5, 2}}, matrix1 = {{1, 2},
+    vector<vector<int>> matrix = {{2, 2},
+                                  {3, 3}}, matrix1 = {{1, 2},
                                                       {3, 3}};
     Solution sol;
-    auto s = sol.nthUglyNumber(11);
+    auto s = sol.prevPermOpt1(num);
     Print(s);
 
     return 0;

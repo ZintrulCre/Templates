@@ -10,6 +10,7 @@
 #include <math.h>
 #include <limits>
 #include <algorithm>
+#include <numeric>
 #include <vector>
 #include <stack>
 #include <queue>
@@ -66,6 +67,7 @@ using std::prev_permutation;
 using std::lower_bound;
 using std::upper_bound;
 using std::stoll;
+using std::accumulate;
 
 
 #endif //CPP_INCLUDE_H

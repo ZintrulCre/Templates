@@ -10,20 +10,29 @@
 
 class Solution {
 public:
-    int nthUglyNumber(int n) {
-        vector<int> primes{2, 3, 5};
-        int m = primes.size();
-        vector<int> factor(primes.size(), 0), res(n, 1);
-        for (int i = 1; i < n; ++i) {
-            res[i] = INT_MAX;
-            for (int j = 0; j < m; ++j)
-                res[i] = min(res[i], primes[j] * res[factor[j]]);
-            for (int j = 0; j < m; ++j)
-                if (primes[j] * res[factor[j]] == res[i])
-                    ++factor[j];
+    vector<int> rearrangeBarcodes(vector<int> &barcodes) {
+        int n = barcodes.size();
+        if (n <= 2)
+            return barcodes;
+        for (int i = 0; i < n - 1; ++i) {
+            int j = i + 1;
+            while (j < n && barcodes[i] == barcodes[j])
+                ++j;
+            if (j >= n)
+                break;
+            swap(barcodes[j], barcodes[i + 1]);
         }
-        return res.back();
+        for (int i = n - 1; i >= 1; --i) {
+            int j = i - 1;
+            while (j >= 0 && barcodes[i] == barcodes[j])
+                --j;
+            if (j < 0)
+                break;
+            swap(barcodes[j], barcodes[i - 1]);
+        }
+        return barcodes;
     }
 };
+
 
 #endif

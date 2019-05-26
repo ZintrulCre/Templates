@@ -10,15 +10,22 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def nthUglyNumber(self, n: int) -> int:
-        primes = [2, 3, 5]
-        m = len(primes)
-        factor, res = [0 for _ in range(m)], [1 for _ in range(n)]
-        for i in range(1, n):
-            res[i] = sys.maxsize
-            for j in range(m):
-                res[i] = min(res[i], primes[j] * res[factor[j]])
-            for j in range(m):
-                if primes[j] * res[factor[j]] == res[i]:
-                    factor[j] += 1
-        return res[-1]
+    def rearrangeBarcodes(self, codes: List[int]) -> List[int]:
+        n = len(codes)
+        if n <= 2:
+            return codes
+        for i in range(n):
+            j = i + 1
+            while j < n and codes[j] == codes[i]:
+                j += 1
+            if j >= n:
+                break
+            codes[j], codes[i + 1] = codes[i + 1], codes[j]
+        for i in range(n - 1, -1, -1):
+            j = i - 1
+            while j > -1 and codes[j] == codes[i]:
+                j -= 1
+            if j < 0:
+                break
+            codes[j], codes[i - 1] = codes[i - 1], codes[j]
+        return codes
