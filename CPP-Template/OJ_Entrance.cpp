@@ -1,86 +1,57 @@
-//#include <iostream>
-//#include <cmath>
-//#include <cstdio>
-//#include <math.h>
-//#include <limits>
-//#include <algorithm>
-//#include <vector>
-//#include <stack>
-//#include <queue>
-//#include <string>
-//#include <map>
-//#include <set>
-//#include <unordered_map>
-//#include <unordered_set>
-//
-//using namespace std;
-//
-//char Decide(const char &R, const char &P, const char &S) {
-//    if (R && P && S)
-//        return 'X';
-//    if (R && P)
-//        return 'P';
-//    if (R && S)
-//        return 'R';
-//    if (P && S)
-//        return 'S';
-//    if (R)
-//        return 'P';
-//    if (P)
-//        return 'S';
-//    return 'R';
-//}
-//
-//bool Defeate(const char &current, const char &opponent) {
-//    return (current == 'R' && opponent == 'S') || (current == 'S' && opponent == 'P') ||
-//           (current == 'P' && opponent == 'R');
-//}
-//
-//void solve(const int &t) {
-//    int A;
-//    scanf("%d", &A);
-//    int i = 0;
-//    vector<string> opponent(A);
-//    vector<bool> defeated(A, false);
-//    bool R, P, S;
-//    string res;
-//    for (int a = 0; a < A; ++a)
-//        cin >> opponent[a];
-//    while (true) {
-//        int current_opponent = 0;
-//        R = false, P = false, S = false;
-//        for (int a = 0; a < A; ++a) {
-//            if (!defeated[a]) {
-//                ++current_opponent;
-//                if (opponent[a][i % opponent[a].size()] == 'R')
-//                    R = true;
-//                else if (opponent[a][i % opponent[a].size()] == 'P')
-//                    P = true;
-//                else
-//                    S = true;
-//            }
-//        }
-//        if (current_opponent == 0)
-//            break;
-//        char result = Decide(R, P, S);
-//        if (result == 'X') {
-//            res = "IMPOSSIBLE";
-//            break;
-//        }
-//        res += result;
-//        for (int a = 0; a < A; ++a) {
-//            if (!defeated[a] && Defeate(result, opponent[a][i % opponent[a].size()]))
-//                defeated[a] = true;
-//        }
-//        ++i;
-//    }
-//    printf("Case #%d: %s\n", t, res.c_str());
-//}
-//
-//int main() {
-//    int T;
-//    scanf("%d", &T);
-//    for (int t = 1; t <= T; ++t)
-//        solve(t);
-//    return 0;
-//}
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+#include <math.h>
+#include <limits>
+#include <algorithm>
+#include <vector>
+#include <stack>
+#include <queue>
+#include <string>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+
+using namespace std;
+
+void solve(const int &t) {
+    int R, C, K;
+    scanf("%d %d %d", &R, &C, &K);
+    vector<vector<int>> len(301, vector<int>(301, 1)), matrix(301, vector<int>(301));
+    for (int r = 0; r < R; ++r)
+        for (int c = 0; c < C; ++c)
+            scanf("%d", &matrix[r][c]);
+    for (int r = 0; r < R; ++r) {
+        for (int c = 0; c < C; ++c) {
+            int i = c - 1, current_max = matrix[r][c], current_min = matrix[r][c];
+            while (i >= 0) {
+                current_max = max(current_max, matrix[r][i]);
+                current_min = min(current_min, matrix[r][i]);
+                if (current_max - current_min > K)
+                    break;
+                --i;
+            }
+            len[r][c] = c - i;
+        }
+    }
+    int res = 1;
+    for (int r = 0; r < R; ++r) {
+        for (int c = 0; c < C; ++c) {
+            int min_c = len[r][c];
+            for (int line = r; line >= 0; --line) {
+                min_c = min(min_c, len[line][c]);
+                res = max(res, min_c * (r - line + 1));
+            }
+        }
+    }
+    printf("Case #%d: %d\n", t, res);
+}
+
+int main() {
+    int T;
+    scanf("%d", &T);
+    for (int t = 1; t <= T; ++t)
+        solve(t);
+    return 0;
+}

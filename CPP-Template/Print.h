@@ -28,6 +28,13 @@ void Print(stack<T> stk) {
     cout << endl;
 }
 
+template<typename T, typename S>
+void Print(const map<T, S> &match) {
+    for (auto &m: match)
+        cout << m.first << ' ' << m.second << endl;
+    cout << endl;
+}
+
 template<typename T>
 void Print(const set<T> &vec) {
     for (auto &v: vec)

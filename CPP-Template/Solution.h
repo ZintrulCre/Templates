@@ -11,26 +11,26 @@
 class Solution {
 public:
     vector<int> rearrangeBarcodes(vector<int> &barcodes) {
-        int n = barcodes.size();
-        if (n <= 2)
-            return barcodes;
-        for (int i = 0; i < n - 1; ++i) {
-            int j = i + 1;
-            while (j < n && barcodes[i] == barcodes[j])
-                ++j;
-            if (j >= n)
-                break;
-            swap(barcodes[j], barcodes[i + 1]);
+        int i = 0, n = barcodes.size();
+        unordered_map<int, int> count;
+        vector<int> res(n);
+        vector<vector<int>> match;
+        for (auto b:barcodes)
+            ++count[b];
+        for (auto &c:count)
+            match.push_back(vector<int>{c.first, c.second});
+        sort(match.begin(), match.end(), [](vector<int> &m1, vector<int> &m2) {
+            return m1[1] > m2[1];
+        });
+        for (auto &m:match) {
+            for (int &j = m[1]; j > 0; --j) {
+                res[i] = m[0];
+                i += 2;
+                if (i >= n)
+                    i = 1;
+            }
         }
-        for (int i = n - 1; i >= 1; --i) {
-            int j = i - 1;
-            while (j >= 0 && barcodes[i] == barcodes[j])
-                --j;
-            if (j < 0)
-                break;
-            swap(barcodes[j], barcodes[i - 1]);
-        }
-        return barcodes;
+        return res;
     }
 };
 
