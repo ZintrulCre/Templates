@@ -96,7 +96,7 @@ int main() {
                                   {1, 1, 0}}, matrix1 = {{1, 2},
                                                          {3, 3}};
     Solution sol;
-    auto s = sol.maxEqualRowsAfterFlips(array);
+    auto s = sol.GetUglyNumber_Solution(11);
     Print(s);
 
     return 0;

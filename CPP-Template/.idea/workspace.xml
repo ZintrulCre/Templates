@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="98" column="45" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="45" />
+              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Solution.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="435">
+              <caret line="15" column="48" selection-start-line="10" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#47#69#0" expanded="true" />
               </folding>
@@ -180,8 +180,8 @@
         <option value="$PROJECT_DIR$/Include.h" />
         <option value="$PROJECT_DIR$/Print.h" />
         <option value="$PROJECT_DIR$/OJ_Entrance.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Solution.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -198,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,6 +214,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,18 +396,19 @@
       <workItem from="1559376638852" duration="665000" />
       <workItem from="1559380916206" duration="1589000" />
       <workItem from="1559399042256" duration="8890000" />
+      <workItem from="1559470511589" duration="1072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485871000" />
+    <option name="totallyTimeSpent" value="486943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19391824" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19591226" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32994455" />
@@ -416,7 +417,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.28280962" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.31515712" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.31515712" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.34288356" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.32673267" />
@@ -477,8 +478,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Solution.h</url>
-          <line>32</line>
-          <option name="timeStamp" value="175" />
+          <line>16</line>
+          <option name="timeStamp" value="178" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -786,7 +787,7 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="98" column="45" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="45" />
+          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -795,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Solution.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="435">
+          <caret line="15" column="48" selection-start-line="10" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#47#69#0" expanded="true" />
           </folding>
