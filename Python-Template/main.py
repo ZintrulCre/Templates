@@ -47,9 +47,9 @@ b.next = c
 # c.right = g
 
 nums = ["ba", "bca", "bda", "a", "b", "bdca"]
-array =[2,7,4,1,8,1]
+array = [2, 7, 4, 1, 8, 1]
 matrix = [[2, 5], [8, 4], [0, -1]]
 
 sol = Solution()
-s = sol.prevPermOpt1([3,1,1,3])
+s = sol.addNegabinary([1, 0, 1, 0, 1], [1, 0, 1])
 print(s)
