@@ -87,13 +87,14 @@ int main() {
 //    g->next = h;
 
     vector<vector<int>> array{{0, 1},
-                              {1, 0}};
-    vector<int> num{1,1,1,1,1}, num1{1,0,1};
+                              {1, 1}};
+    vector<int> num{1, 1, 1, 1, 1}, num1{1, 0, 1};
     string str1 = "", str2 = "ABAB";
     vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{2, 2},
-                                  {3, 3}}, matrix1 = {{1, 2},
-                                                      {3, 3}};
+    vector<vector<int>> matrix = {{0, 0, 0},
+                                  {0, 0, 1},
+                                  {1, 1, 0}}, matrix1 = {{1, 2},
+                                                         {3, 3}};
     Solution sol;
     auto s = sol.maxEqualRowsAfterFlips(array);
     Print(s);

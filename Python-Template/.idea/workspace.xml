@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="00dc23d0-2686-4ae4-a9e3-e5a59fff924f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/OJ_Entrance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/OJ_Entrance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/Solution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/Solution.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/OJ_Entrance.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/OJ_Entrance.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CPP-Template/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -323,12 +316,12 @@
       <workItem from="1558843233152" duration="664000" />
       <workItem from="1558859037405" duration="609000" />
       <workItem from="1559199758617" duration="102000" />
-      <workItem from="1559399103391" duration="2141000" />
+      <workItem from="1559399103391" duration="2396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146557000" />
+    <option name="totallyTimeSpent" value="146812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -340,7 +333,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25323474" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31423292" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31423292" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
