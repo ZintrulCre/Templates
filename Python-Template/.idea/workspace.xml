@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00dc23d0-2686-4ae4-a9e3-e5a59fff924f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/Solution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/Solution.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/CMakeFiles/cpp.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/cmake-build-debug/cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CPP-Template/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CPP-Template/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="1508">
+              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -38,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Solution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" selection-start-line="11" selection-end-line="50" />
+            <state relative-caret-position="319">
+              <caret line="11" selection-start-line="11" selection-end-line="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -317,17 +313,18 @@
       <workItem from="1558859037405" duration="609000" />
       <workItem from="1559199758617" duration="102000" />
       <workItem from="1559399103391" duration="2396000" />
+      <workItem from="1559811371760" duration="1024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146812000" />
+    <option name="totallyTimeSpent" value="147836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11914257" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120139584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,16 +357,6 @@
           <url>file://$PROJECT_DIR$/OJ_Entrance.py</url>
           <line>11</line>
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -428,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="1508">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -438,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" selection-start-line="11" selection-end-line="50" />
+        <state relative-caret-position="319">
+          <caret line="11" selection-start-line="11" selection-end-line="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

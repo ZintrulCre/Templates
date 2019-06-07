@@ -10,20 +10,25 @@
 
 class Solution {
 public:
-    int GetUglyNumber_Solution(int index) {
-        if (index == 1)
-            return 1;
-        vector<int> primes{2, 3, 5}, coe{0, 0, 0}, res{1};
-        for (int i = 1; i < index; ++i) {
-            int r = INT_MAX;
-            for (int j = 0; j < 3; ++j)
-                r = min(r, primes[j] * res[coe[j]]);
-            for (int j = 0; j < 3; ++j)
-                if (primes[j] * res[coe[j]] == r)
-                    ++coe[j];
-            res.push_back(r);
+    int numSubmatrixSumTarget(vector<vector<int>> &matrix, int target) {
+        int m = matrix.size(), n = m == 0 ? 0 : matrix[0].size(), res = 0;
+        if (m == 0)
+            return 0;
+        for (int i = 0; i < m; ++i)
+            for (int j = 1; j < n; ++j)
+                matrix[i][j] += matrix[i][j - 1];
+        for (int j = 0; j < n; ++j) {
+            for (int y = j; y < n; ++y) {
+                for (int i = 0; i < m; ++i) {
+                    int sum = 0;
+                    for (int x = i; x < m; ++x) {
+                        sum += matrix[x][y] - (j == 0 ? 0 : matrix[x][j - 1]);
+                        res += (sum == target);
+                    }
+                }
+            }
         }
-        return res.back();
+        return res;
     }
 };
 

@@ -10,41 +10,19 @@ from queue import PriorityQueue
 
 
 class Solution:
-    def addNegabinary(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        m, n = len(arr1) - 1, len(arr2) - 1
-        if m < n:
-            return self.addNegabinary(arr2, arr1)
-        temp, res = 0, 0
-        while m >= 0:
-            temp = arr1[m] + res
-            if n >= 0:
-                temp += arr2[n]
-            if temp == 2:
-                arr1[m] = 0
-                res = -1
-            else:
-                arr1[m] = temp
-                res = 0
-            if n >= 0:
-                n -= 1
-            m -= 1
-        if res == -1:
-            arr1 = [-1] + arr1
-        m = len(arr1) - 1
-        while m >= 0:
-            if arr1[m] == -1:
-                arr1[m] = 1
-                if m - 1 >= 0:
-                    arr1[m - 1] += 1
-                else:
-                    arr1 = [1] + arr1
-            elif arr1[m] == 2:
-                arr1[m] = 0
-                if m - 1 >= 0:
-                    arr1[m - 1] -= 1
-                else:
-                    arr1 = [1, 1] + arr1
-            m -= 1
-        while len(arr1) > 1 and arr1[0] == 0:
-            arr1 = arr1[1:]
-        return arr1
+    def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
+        m = len(matrix)
+        if m == 0:
+            return 0
+        n, res = len(matrix[0]), 0
+        for i in range(m):
+            for j in range(1, n):
+                matrix[i][j] += matrix[i][j - 1]
+        for j in range(n):
+            for y in range(j, n):
+                for i in range(m):
+                    val = 0
+                    for x in range(i, m):
+                        val += matrix[x][y] - (0 if j == 0 else matrix[x][j - 1])
+                        res += (val == target)
+        return res

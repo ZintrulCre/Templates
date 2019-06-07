@@ -91,12 +91,11 @@ int main() {
     vector<int> num{1, 1, 1, 1, 1}, num1{1, 0, 1};
     string str1 = "", str2 = "ABAB";
     vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{0, 0, 0},
-                                  {0, 0, 1},
-                                  {1, 1, 0}}, matrix1 = {{1, 2},
-                                                         {3, 3}};
+    vector<vector<int>> matrix = {{1,  -1},
+                                  {-1, 1}}, matrix1 = {{1, 2},
+                                                       {3, 3}};
     Solution sol;
-    auto s = sol.GetUglyNumber_Solution(11);
+    auto s = sol.numSubmatrixSumTarget(matrix, 0);
     Print(s);
 
     return 0;
