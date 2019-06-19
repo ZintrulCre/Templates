@@ -53,22 +53,25 @@ int main() {
 //    b->random = e;
 //    d->random = b;
 
-    auto a = new TreeNode(4);
-    auto b = new TreeNode(1);
-    auto c = new TreeNode(6);
-    auto d = new TreeNode(2);
-    auto e = new TreeNode(5);
-    auto f = new TreeNode(7);
-    auto g = new TreeNode(3);
-    auto h = new TreeNode(8);
+    auto a = new TreeNode(5);
+    auto b = new TreeNode(4);
+    auto c = new TreeNode(8);
+    auto d = new TreeNode(11);
+    auto e = new TreeNode(17);
+    auto f = new TreeNode(4);
+    auto g = new TreeNode(7);
+    auto h = new TreeNode(1);
+    auto i = new TreeNode(5);
+    auto j = new TreeNode(3);
     a->left = b;
     a->right = c;
     b->left = d;
-    b->right = d;
     c->left = e;
     c->right = f;
-    d->right = g;
-    f->right = h;
+    d->left = g;
+    d->right = h;
+    f->left = i;
+    f->right = j;
 
 //    auto a = new ListNode(3);
 //    auto b = new ListNode(3);
@@ -88,15 +91,14 @@ int main() {
 
     vector<vector<int>> array{{0, 1},
                               {1, 1}};
-    vector<int> num{1, 1, 1, 1, 1}, num1{1, 0, 1};
-    string str1 = "", str2 = "ABAB";
+    vector<int> num{5, 4, 3, 2, 1}, num1{1, 3, 3, 3, 2};
+    string str1 = "{a,b}{z,x,y}", str2 = "ABAB";
     vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{1,  -1},
-                                  {-1, 1}}, matrix1 = {{1, 2},
+    vector<vector<int>> matrix = {{0,0,0},{1,1,0},{1,1,0}}, matrix1 = {{1, 2},
                                                        {3, 3}};
     Solution sol;
-    auto s = sol.numSubmatrixSumTarget(matrix, 0);
-    Print(s);
+    auto s = sol.singleNonDuplicate(5);
+    Printer::GetInstance().Print(s);
 
     return 0;
 }
