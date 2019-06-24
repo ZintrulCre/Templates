@@ -97,7 +97,7 @@ int main() {
     vector<vector<int>> matrix = {{0,0,0},{1,1,0},{1,1,0}}, matrix1 = {{1, 2},
                                                        {3, 3}};
     Solution sol;
-    auto s = sol.singleNonDuplicate(5);
+    auto s = sol.minimumDeleteSum("delete", "leet");
     Printer::GetInstance().Print(s);
 
     return 0;
