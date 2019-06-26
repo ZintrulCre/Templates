@@ -91,13 +91,19 @@ int main() {
 
     vector<vector<int>> array{{0, 1},
                               {1, 1}};
-    vector<int> num{5, 4, 3, 2, 1}, num1{1, 3, 3, 3, 2};
+    vector<int> num{2,4,1}, num1{3,2,1,5,8};
     string str1 = "{a,b}{z,x,y}", str2 = "ABAB";
     vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{0,0,0},{1,1,0},{1,1,0}}, matrix1 = {{1, 2},
-                                                       {3, 3}};
+    vector<vector<int>> matrix = {{0, 0, 0},
+                                  {1, 1, 0},
+                                  {1, 1, 0}}, matrix1 = {{1, 2},
+                                                         {3, 3}};
+
+    vector<vector<char>> vc = {{'0', 'E', '0', '0'},
+                               {'E', '0', 'W', 'E'},
+                               {'0', 'E', '0', '0'}};
     Solution sol;
-    auto s = sol.minimumDeleteSum("delete", "leet");
+    auto s = sol.maxProfit(2,num);
     Printer::GetInstance().Print(s);
 
     return 0;
