@@ -10,24 +10,40 @@
 
 class Solution {
 public:
-    int maxProfit(int k, vector<int> &prices) {
-        int n = prices.size();
-        if (n < 2 || k == 0)
-            return 0;
-        vector<vector<int>> buy(n, vector<int>(k, INT_MIN)), sell(n, vector<int>(k, 0));
-        buy[0][0] = -prices[0], sell[0][0] = 0;
-        cout << buy[0][0] << ' ' << sell[0][0] << endl;
-        for (int i = 1; i < n; ++i) {
-            buy[i][0] = max(buy[i - 1][0], -prices[i]);
-            sell[i][0] = max(sell[i - 1][0], buy[i - 1][0] + prices[i]);
-            cout << i << ' ' << 0 << ' ' << buy[i][0] << ' ' << sell[i][0] << endl;
-            for (int j = 1; j < k && j <= i; ++j) {
-                buy[i][j] = max(buy[i - 1][j - 1], sell[i - 1][j - 1] - prices[i]);
-                sell[i][j] = max(sell[i - 1][j - 1], buy[i - 1][j] + prices[i]);
-                cout << i << ' ' << j << ' ' << buy[i][j] << ' ' << sell[i][j] << endl;
+    vector<int> pathInZigZagTree(int label) {
+        vector<int> res;
+        while (label > 0) {
+            int k = label, l = 1;
+            bool odd = true;
+            int level = 0;
+            while (k > 1) {
+                k >>= 1;
+                ++l;
+            }
+            if (l % 2 == 0)
+                odd = false;
+            res.push_back(label);
+            if (!odd) {
+                while (k < label)
+                    k <<= 1;
+                if (k != label)
+                    k >>= 1;
+                k -= 1;
+                label = k ^ label;
+                label /= 2;
+            }
+            else {
+                label /= 2;
+                while (k < label)
+                    k <<= 1;
+                if (k != label)
+                    k >>= 1;
+                k -= 1;
+                label = k ^ label;
             }
         }
-        return sell[n - 1][k - 1];
+        reverse(res.begin(), res.end());
+        return res;
     }
 };
 
