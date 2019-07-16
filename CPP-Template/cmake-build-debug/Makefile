@@ -231,6 +231,33 @@ Printer.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/Printer.cpp.s
 .PHONY : Printer.cpp.s
 
+TestMain.o: TestMain.cpp.o
+
+.PHONY : TestMain.o
+
+# target to build an object file
+TestMain.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/TestMain.cpp.o
+.PHONY : TestMain.cpp.o
+
+TestMain.i: TestMain.cpp.i
+
+.PHONY : TestMain.i
+
+# target to preprocess a source file
+TestMain.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/TestMain.cpp.i
+.PHONY : TestMain.cpp.i
+
+TestMain.s: TestMain.cpp.s
+
+.PHONY : TestMain.s
+
+# target to generate assembly for a file
+TestMain.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/TestMain.cpp.s
+.PHONY : TestMain.cpp.s
+
 TreeSerialization.o: TreeSerialization.cpp.o
 
 .PHONY : TreeSerialization.o
@@ -306,6 +333,9 @@ help:
 	@echo "... Printer.o"
 	@echo "... Printer.i"
 	@echo "... Printer.s"
+	@echo "... TestMain.o"
+	@echo "... TestMain.i"
+	@echo "... TestMain.s"
 	@echo "... TreeSerialization.o"
 	@echo "... TreeSerialization.i"
 	@echo "... TreeSerialization.s"

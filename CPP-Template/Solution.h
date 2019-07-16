@@ -9,41 +9,36 @@
 #include "TreeSerialization.h"
 
 class Solution {
-public:
-    vector<int> pathInZigZagTree(int label) {
-        vector<int> res;
-        while (label > 0) {
-            int k = label, l = 1;
-            bool odd = true;
-            int level = 0;
-            while (k > 1) {
-                k >>= 1;
-                ++l;
-            }
-            if (l % 2 == 0)
-                odd = false;
-            res.push_back(label);
-            if (!odd) {
-                while (k < label)
-                    k <<= 1;
-                if (k != label)
-                    k >>= 1;
-                k -= 1;
-                label = k ^ label;
-                label /= 2;
-            }
-            else {
-                label /= 2;
-                while (k < label)
-                    k <<= 1;
-                if (k != label)
-                    k >>= 1;
-                k -= 1;
-                label = k ^ label;
-            }
+    ListNode *ReverseLinkedList(ListNode *head) {
+        ListNode *prev = nullptr, *curr = head, *next = nullptr;
+        while (curr) {
+            next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
         }
-        reverse(res.begin(), res.end());
-        return res;
+        return prev;
+    }
+
+public:
+    ListNode *reverseKGroup(ListNode *head, int k) {
+        ListNode *root = new ListNode(0), *prev = root;
+        prev->next = head;
+        while (prev) {
+            int i = 1;
+            ListNode *start = prev->next, *end = prev->next, *curr = end, *next = nullptr;
+            while (curr && i < k)
+                curr = curr->next, ++i;
+            if (i < k || !curr)
+                break;
+            next = curr->next;
+            curr->next = nullptr;
+            start = ReverseLinkedList(start);
+            prev->next = start;
+            end->next = next;
+            prev = end;
+        }
+        return root->next;
     }
 };
 

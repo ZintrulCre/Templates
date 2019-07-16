@@ -23,23 +23,6 @@ struct ListNode {
 
 };
 
-class Node {
-public:
-    int val;
-    Node *prev;
-    Node *next;
-    Node *child;
-
-    Node() = default;
-
-    Node(int _val, Node *_prev, Node *_next, Node *_child) {
-        val = _val;
-        prev = _prev;
-        next = _next;
-        child = _child;
-    }
-};
-
 struct Interval {
     int start;
     int end;
@@ -49,6 +32,21 @@ struct Interval {
     Interval(int s, int e) : start(s), end(e) {}
 
     friend bool operator<(const Interval &interval1, const Interval &interval2);
+};
+
+class Node {
+public:
+    int val;
+    Node* next;
+    Node* random;
+
+    Node() {}
+
+    Node(int _val, Node* _next, Node* _random) {
+        val = _val;
+        next = _next;
+        random = _random;
+    }
 };
 
 struct RandomListNode {

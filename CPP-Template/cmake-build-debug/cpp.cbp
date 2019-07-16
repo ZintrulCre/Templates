@@ -119,6 +119,9 @@
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Sort/Sort.h">
 			<Option target="cpp"/>
 		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TestMain.cpp">
+			<Option target="cpp"/>
+		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.cpp">
 			<Option target="cpp"/>
 		</Unit>
