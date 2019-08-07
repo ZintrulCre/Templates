@@ -19,6 +19,9 @@
 #include <set>
 #include <unordered_map>
 #include <unordered_set>
+#include <mutex>
+#include <semaphore.h>
+#include <future>
 
 using std::vector;
 using std::queue;
@@ -68,6 +71,13 @@ using std::lower_bound;
 using std::upper_bound;
 using std::stoll;
 using std::accumulate;
+
+using std::mutex;
+using std::function;
+using std::condition_variable;
+using std::unique_lock;
+using std::atomic_int;
+using std::promise;
 
 
 #endif //CPP_INCLUDE_H

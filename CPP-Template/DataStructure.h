@@ -37,15 +37,13 @@ struct Interval {
 class Node {
 public:
     int val;
-    Node* next;
-    Node* random;
+    vector<Node*> children;
 
     Node() {}
 
-    Node(int _val, Node* _next, Node* _random) {
+    Node(int _val, vector<Node*> _children) {
         val = _val;
-        next = _next;
-        random = _random;
+        children = _children;
     }
 };
 

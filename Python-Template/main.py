@@ -1,7 +1,6 @@
 from Solution import *
 from DataStructure import *
 
-
 a = TreeNode(5)
 b = TreeNode(4)
 c = TreeNode(8)
@@ -56,10 +55,42 @@ f.right = j
 # c.left = f
 # c.right = g
 
-nums = ["ba", "bca", "bda", "a", "b", "bdca"]
-array = [2, 7, 4, 1, 8, 1]
-matrix = [[2, 5], [8, 4], [0, -1]]
+# nums = ["ba", "bca", "bda", "a", "b", "bdca"]
+# array = [2, 7, 4, 1, 8, 1]
+# matrix = [[2, 5], [8, 4], [0, -1]]
+#
+# sol = Solution()
+# s = sol.sufficientSubset(a,22)
+# print(s)
 
-sol = Solution()
-s = sol.sufficientSubset(a,22)
-print(s)
+v1 = [int(x) for x in input().split(' ')]
+v2 = [int(x) for x in input().split(' ')]
+
+i, res = 1, -sys.maxsize
+
+if len(v1) > 2 and v1[0] > v1[1] and v1[0] > v1[2]:
+    x = v1[0]
+    for m in v2:
+        if m < v1[1]:
+            res = max(res, m)
+    if res != -sys.maxsize:
+        v1[0] = res
+    print(v1 if res != -sys.maxsize else "NO")
+else:
+    while i < len(v1):
+        if v1[i] <= v1[i - 1]:
+            break
+        i += 1
+    if i == len(v1) or v1[i + 1] > v1[i - 1]:
+        for m in v2:
+            if m > v1[i - 1] and (i + 1 >= len(v1) or m < v1[i + 1]):
+                res = max(res, m)
+        if res != -sys.maxsize:
+            v1[i] = res
+    elif v1[i + 1] < v1[i - 1]:
+        for m in v2:
+            if m < v1[i]:
+                res = max(res, m)
+        if res != -sys.maxsize:
+            v1[i - 1] = res
+    print(v1 if res != -sys.maxsize else "NO")

@@ -15,43 +15,94 @@
 //
 //using namespace std;
 //
-//void solve(const int &t) {
-//    int R, C, K;
-//    scanf("%d %d %d", &R, &C, &K);
-//    vector<vector<int>> len(301, vector<int>(301, 1)), matrix(301, vector<int>(301));
-//    for (int r = 0; r < R; ++r)
-//        for (int c = 0; c < C; ++c)
-//            scanf("%d", &matrix[r][c]);
-//    for (int r = 0; r < R; ++r) {
-//        for (int c = 0; c < C; ++c) {
-//            int i = c - 1, current_max = matrix[r][c], current_min = matrix[r][c];
-//            while (i >= 0) {
-//                current_max = max(current_max, matrix[r][i]);
-//                current_min = min(current_min, matrix[r][i]);
-//                if (current_max - current_min > K)
-//                    break;
-//                --i;
-//            }
-//            len[r][c] = c - i;
+//#define VVI vector<vector<int>>
+//#define VVB vector<vector<bool>>
+//#define VI vector<int>
+//#define VB vector<bool>
+//
+////bool IsXorEven(int num) {
+////    int k = 0;
+////    while (num > 0) {
+////        if (num & 1)
+////            ++k;
+////        num >>= 1;
+////    }
+////    return k % 2 == 0;
+////}
+////
+////int FindSubinterval(VI &nums, int x, int y, int res) {
+////    queue<vector<int>> q;
+////    vector<int> t{x, y, res};
+////    q.push(t);
+////    int len = 1;
+////    while (!q.empty()) {
+////        vector<int> c = q.front();
+////        q.pop();
+////        if (IsXorEven(c[2]))
+////            return c[1] - c[0];
+////        if (c[0] + 1 < c[1]) {
+////            q.push(vector<int>{c[0] + 1, c[1], c[2] ^ nums[c[0]]});
+////            q.push(vector<int>{c[0], c[1] - 1, c[2] ^ nums[c[1] - 1]});
+////        }
+////    }
+////    return 0;
+////}
+////
+////void solve(const int &t) {
+////    int N, Q, res = 0;
+////    VI ret;
+////    scanf("%d %d", &N, &Q);
+////    VI nums(N, 0);
+////    for (int i = 0; i < N; ++i) {
+////        scanf("%d", &nums[i]);
+////        res ^= nums[i];
+////    }
+////    for (int i = 0; i < Q; ++i) {
+////        int p, v;
+////        scanf("%d %d", &p, &v);
+////        res ^= nums[p];
+////        nums[p] = v;
+////        res ^= nums[p];
+////        ret.push_back(FindSubinterval(nums, 0, nums.size(), res));
+////    }
+////    printf("Case #%d: ", t);
+////    for (auto &r:ret)
+////        printf("%d ", r);
+////    printf("\n");
+////}
+//
+//int res;
+//
+//void DFS(vector<vector<int>> &len_wei, int index, int max_weight, int lvl) {
+//    for (int i = index + 1; i < len_wei.size(); ++i) {
+//        if (len_wei[i][1] <= max_weight) {
+//            res = max(res, lvl + 1);
+//            DFS(len_wei, i, min(max_weight - len_wei[i][1], len_wei[i][1] * 7), lvl + 1);
 //        }
 //    }
-//    int res = 1;
-//    for (int r = 0; r < R; ++r) {
-//        for (int c = 0; c < C; ++c) {
-//            int min_c = len[r][c];
-//            for (int line = r; line >= 0; --line) {
-//                min_c = min(min_c, len[line][c]);
-//                res = max(res, min_c * (r - line + 1));
-//            }
-//        }
-//    }
-//    printf("Case #%d: %d\n", t, res);
 //}
 //
 //int main() {
-//    int T;
-//    scanf("%d", &T);
-//    for (int t = 1; t <= T; ++t)
-//        solve(t);
+////    int T;
+////    scanf("%d", &T);
+////    for (int t = 1; t <= T; ++t)
+////        solve(t);
+//
+//
+//    int n,m;
+//    cin >> n >> m;
+//    vector<int> time(n + 1, 0);
+//    unordered_map<int, vector<int>> rely;
+//    for (int i = 1 ; i <= n; ++i)
+//        cin >> time[i];
+//    for (int i = 0 ; i < m; ++i) {
+//        int a, b;
+//        cin >> a >> b;
+//        if(rely.find(b) == rely.end())
+//            rely[b] = vector<int>();
+//        rely[b].push_back(a);
+//    }
+//
+//
 //    return 0;
 //}

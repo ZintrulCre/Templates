@@ -4,8 +4,15 @@
 #include "Solution.h"
 #include "DataStructure.h"
 #include "TreeSerialization.h"
+#include "Pointer/Include.h"
 
 int main() {
+//    Deleter del;
+//    Object *o = new Object();
+//    int *x = new int(1);
+//    UniquePointer<int, Deleter> u1(x, del);
+//    UniquePointer<int, Deleter> u2(move(u1));
+
     vector<pair<int, int>> vp = {
             pair<int, int>{1, 0},
             pair<int, int>{0, 1}
@@ -53,19 +60,19 @@ int main() {
 //    b->random = e;
 //    d->random = b;
 //
-//    auto a = new TreeNode(1);
-//    auto b = new TreeNode(2);
-//    auto c = new TreeNode(3);
-//    auto d = new TreeNode(4);
+    auto a = new TreeNode(1);
+    auto b = new TreeNode(2);
+    auto c = new TreeNode(3);
+    auto d = new TreeNode(4);
 //    auto e = new TreeNode(5);
 //    auto f = new TreeNode(6);
 //    auto g = new TreeNode(7);
 //    auto h = new TreeNode(1);
 //    auto i = new TreeNode(5);
 //    auto j = new TreeNode(3);
-//    a->left = b;
-//    a->right = c;
-//    b->left = d;
+    a->left = b;
+    a->right = c;
+    b->left = d;
 //    b->right = e;
 //    c->left = f;
 //    c->right = g;
@@ -73,37 +80,52 @@ int main() {
 //    f->left = i;
 //    f->right = j;
 
-    auto a = new ListNode(1);
-    auto b = new ListNode(2);
-    auto c = new ListNode(3);
-    auto d = new ListNode(4);
-    auto e = new ListNode(5);
+//    auto a = new ListNode(1);
+//    auto b = new ListNode(2);
+//    auto c = new ListNode(3);
+//    auto d = new ListNode(4);
+//    auto e = new ListNode(5);
 //    auto f = new ListNode(2);
 //    auto g = new ListNode(7);
-    a->next = b;
-    b->next = c;
-    c->next = d;
-    d->next = e;
+//    a->next = b;
+//    b->next = c;
+//    c->next = d;
+//    d->next = e;
 //    e->next = f;
 //    f->next = g;
 
-    vector<vector<int>> array{{0, 1},
-                              {1, 1}};
-    vector<int> num{3,5}, num1{3, 2, 1, 5, 8};
-    string str1 = "havefunonleetcode", str2 = "ABAB";
-    vector<string> strings{"flower", "flow", "flight"};
-    vector<vector<int>> matrix = {{0, 0, 0},
-                                  {1, 1, 0},
-                                  {1, 1, 0}}, matrix1 = {{1, 2},
-                                                         {3, 3}};
+    vector<vector<int>> array{{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                              {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                              {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                              {0, 0, 0, 1, 1, 0, 0, 1, 1, 0},
+                              {0, 1, 0, 0, 1, 0, 1, 1, 0, 1},
+                              {0, 0, 0, 1, 0, 1, 0, 1, 1, 1},
+                              {0, 1, 0, 0, 1, 0, 0, 1, 1, 0},
+                              {0, 1, 0, 1, 0, 0, 0, 1, 1, 0},
+                              {0, 1, 1, 0, 0, 1, 1, 0, 0, 1},
+                              {1, 0, 1, 1, 0, 1, 0, 1, 0, 1}};
+    vector<int> nums = {9, 10, 7, 10, 6, 1, 5, 4, 9, 8}, num1{4, 5, 2, 6, 7, 3, 1};
+    string str1 = "abcabdebac", str2 = "cda";
+    vector<string> strings{"oath", "pea", "eat", "rain"}, strings2{"oath", "eat"};
+    vector<vector<int>> matrix = {{4, 10, 15, 24, 26},
+                                  {0, 9,  12, 20},
+                                  {5, 18, 22, 30}}, matrix1 = {{1, 2},
+                                                               {2, 3},
+                                                               {3, 1}};
 
-    vector<vector<char>> vc = {{'0', 'E', '0', '0'},
-                               {'E', '0', 'W', 'E'},
-                               {'0', 'E', '0', '0'}};
+    vector<vector<char>> vc = {{'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
+                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'M'},
+                               {'E', 'E', 'M', 'E', 'E', 'E', 'E', 'E'},
+                               {'M', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
+                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
+                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
+                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
+                               {'E', 'E', 'M', 'M', 'E', 'E', 'E', 'E'}};
     Solution sol;
-    auto s = sol.reverseKGroup(a,2);
+    auto s = sol.smallestDistancePair(nums, 18);
     Printer::GetInstance().Print(s);
 
+    return 0;
 
     return 0;
 }

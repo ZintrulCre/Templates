@@ -9,36 +9,29 @@
 #include "TreeSerialization.h"
 
 class Solution {
-    ListNode *ReverseLinkedList(ListNode *head) {
-        ListNode *prev = nullptr, *curr = head, *next = nullptr;
-        while (curr) {
-            next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
+public:
+    int smallestDistancePair(vector<int> &nums, int k) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size(), low = 0, high = nums[n - 1] - nums[0], mid = 0;
+        while (low < high) {
+            mid = low + (high - low) / 2;
+            if (IsDistMoreThanK(nums, mid, k))
+                high = mid;
+            else
+                low = mid + 1;
         }
-        return prev;
+        return high;
     }
 
-public:
-    ListNode *reverseKGroup(ListNode *head, int k) {
-        ListNode *root = new ListNode(0), *prev = root;
-        prev->next = head;
-        while (prev) {
-            int i = 1;
-            ListNode *start = prev->next, *end = prev->next, *curr = end, *next = nullptr;
-            while (curr && i < k)
-                curr = curr->next, ++i;
-            if (i < k || !curr)
-                break;
-            next = curr->next;
-            curr->next = nullptr;
-            start = ReverseLinkedList(start);
-            prev->next = start;
-            end->next = next;
-            prev = end;
+    bool IsDistMoreThanK(const vector<int> &nums, int m, const int &k) {
+        int left = 0, right = 0, count = 0;
+        while (right < nums.size()) {
+            while (nums[right] - nums[left] > m)
+                ++left;
+            count += right - left;
+            ++right;
         }
-        return root->next;
+        return count >= k;
     }
 };
 

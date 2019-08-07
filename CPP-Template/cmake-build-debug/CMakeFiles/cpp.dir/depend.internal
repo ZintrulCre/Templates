@@ -27,6 +27,11 @@ CMakeFiles/cpp.dir/TreeSerialization.cpp.o
 CMakeFiles/cpp.dir/main.cpp.o
  /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/DataStructure.h
  /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Include.h
+ /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/AutoPointer.h
+ /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Deleter.h
+ /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Include.h
+ /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Object.h
+ /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/UniquePointer.h
  /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Print.h
  /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Printer.h
  /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Solution.h

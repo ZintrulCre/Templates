@@ -92,6 +92,21 @@
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/OJ_Entrance.cpp">
 			<Option target="cpp"/>
 		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/AutoPointer.h">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Deleter.h">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Include.h">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Object.h">
+			<Option target="cpp"/>
+		</Unit>
+		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/UniquePointer.h">
+			<Option target="cpp"/>
+		</Unit>
 		<Unit filename="/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Print.cpp">
 			<Option target="cpp"/>
 		</Unit>

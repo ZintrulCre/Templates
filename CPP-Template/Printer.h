@@ -42,9 +42,7 @@ public:
 private:
     Printer();
 
-    ~
-
-    Printer();
+    ~Printer();
 };
 
 template<typename T>

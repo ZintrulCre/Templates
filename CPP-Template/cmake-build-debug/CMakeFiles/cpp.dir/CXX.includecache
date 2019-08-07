@@ -39,6 +39,38 @@ unordered_map
 -
 unordered_set
 -
+mutex
+-
+semaphore.h
+-
+future
+-
+
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/AutoPointer.h
+iostream
+-
+
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Deleter.h
+
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Include.h
+Object.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Object.h
+Deleter.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Deleter.h
+AutoPointer.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/AutoPointer.h
+UniquePointer.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/UniquePointer.h
+
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Object.h
+iostream
+-
+
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/UniquePointer.h
+Deleter.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Deleter.h
+iostream
+-
 
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Print.h
 Include.h
@@ -105,4 +137,6 @@ DataStructure.h
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/DataStructure.h
 TreeSerialization.h
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/TreeSerialization.h
+Pointer/Include.h
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Templates/CPP-Template/Pointer/Include.h
 
