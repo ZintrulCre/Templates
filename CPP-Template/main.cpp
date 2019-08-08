@@ -104,7 +104,7 @@ int main() {
                               {0, 1, 0, 1, 0, 0, 0, 1, 1, 0},
                               {0, 1, 1, 0, 0, 1, 1, 0, 0, 1},
                               {1, 0, 1, 1, 0, 1, 0, 1, 0, 1}};
-    vector<int> nums = {9, 10, 7, 10, 6, 1, 5, 4, 9, 8}, num1{4, 5, 2, 6, 7, 3, 1};
+    vector<int> nums = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1}, num1{4, 5, 2, 6, 7, 3, 1};
     string str1 = "abcabdebac", str2 = "cda";
     vector<string> strings{"oath", "pea", "eat", "rain"}, strings2{"oath", "eat"};
     vector<vector<int>> matrix = {{4, 10, 15, 24, 26},
@@ -122,7 +122,7 @@ int main() {
                                {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
                                {'E', 'E', 'M', 'M', 'E', 'E', 'E', 'E'}};
     Solution sol;
-    auto s = sol.smallestDistancePair(nums, 18);
+    auto s = sol.longestOnes(nums, 3);
     Printer::GetInstance().Print(s);
 
     return 0;

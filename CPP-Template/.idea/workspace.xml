@@ -64,13 +64,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="125" column="28" selection-start-line="124" selection-start-column="27" selection-end-line="125" selection-end-column="28" />
+            <state relative-caret-position="683">
+              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Solution.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              <folding>
+                <element signature="e#47#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,7 +182,6 @@
         <option value="$PROJECT_DIR$/Sort/QuickSort.h" />
         <option value="$PROJECT_DIR$/DataStructure.h" />
         <option value="$PROJECT_DIR$/OJ_Entrance.cpp" />
-        <option value="$PROJECT_DIR$/Solution.h" />
         <option value="$PROJECT_DIR$/Pointer/AutoPointer.cpp" />
         <option value="$PROJECT_DIR$/Include.h" />
         <option value="$PROJECT_DIR$/Pointer/Object.h" />
@@ -180,6 +191,7 @@
         <option value="$PROJECT_DIR$/Pointer/Deleter.h" />
         <option value="$PROJECT_DIR$/Pointer/UniquePointer.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Solution.h" />
       </list>
     </option>
   </component>
@@ -444,24 +456,25 @@
       <workItem from="1565133772985" duration="7903000" />
       <workItem from="1565162011886" duration="11000" />
       <workItem from="1565162643794" duration="20000" />
+      <workItem from="1565248079856" duration="3679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="672141000" />
+    <option name="totallyTimeSpent" value="675820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5006748" side_tool="true" weight="0.19092722" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49932525" visible="true" weight="0.19491525" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49932525" visible="true" weight="0.19690928" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32994455" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.28280962" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.28280962" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32970297" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.31515712" />
@@ -517,6 +530,11 @@
           <url>file://$PROJECT_DIR$/OJ_Entrance.cpp</url>
           <line>38</line>
           <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Solution.h</url>
+          <line>14</line>
+          <option name="timeStamp" value="246" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -827,16 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Solution.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="e#47#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Printer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -900,10 +908,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="125" column="28" selection-start-line="124" selection-start-column="27" selection-end-line="125" selection-end-column="28" />
+        <state relative-caret-position="683">
+          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solution.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#47#69#0" expanded="true" />
           </folding>
         </state>
       </provider>

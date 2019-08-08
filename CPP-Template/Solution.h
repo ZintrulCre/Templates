@@ -10,28 +10,21 @@
 
 class Solution {
 public:
-    int smallestDistancePair(vector<int> &nums, int k) {
-        sort(nums.begin(), nums.end());
-        int n = nums.size(), low = 0, high = nums[n - 1] - nums[0], mid = 0;
-        while (low < high) {
-            mid = low + (high - low) / 2;
-            if (IsDistMoreThanK(nums, mid, k))
-                high = mid;
-            else
-                low = mid + 1;
+    int longestOnes(vector<int> &A, int K) {
+        int i = 0, res = 0;
+        for (int j = 0; j < A.size(); ++j) {
+            if (A[j] == 0) {
+                if (K > 0)
+                    --K;
+                else {
+                    while (A[i] == 1)
+                        ++i;
+                    ++i;
+                }
+            }
+            res = max(res, j - i + 1);
         }
-        return high;
-    }
-
-    bool IsDistMoreThanK(const vector<int> &nums, int m, const int &k) {
-        int left = 0, right = 0, count = 0;
-        while (right < nums.size()) {
-            while (nums[right] - nums[left] > m)
-                ++left;
-            count += right - left;
-            ++right;
-        }
-        return count >= k;
+        return res;
     }
 };
 
