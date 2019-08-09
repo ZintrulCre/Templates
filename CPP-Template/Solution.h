@@ -10,22 +10,27 @@
 
 class Solution {
 public:
-    int longestOnes(vector<int> &A, int K) {
-        int i = 0, res = 0;
-        for (int j = 0; j < A.size(); ++j) {
-            if (A[j] == 0) {
-                if (K > 0)
-                    --K;
-                else {
-                    while (A[i] == 1)
-                        ++i;
-                    ++i;
-                }
-            }
-            res = max(res, j - i + 1);
+    vector<int> maxSlidingWindow(vector<int> &nums, int k) {
+        int n = nums.size();
+        deque<int> d;
+        vector<int> res;
+        for (int i = 0; i < k; ++i) {
+            while (!d.empty() && d.back() < nums[i])
+                d.pop_back();
+            d.push_back(nums[i]);
+        }
+        res.push_back(d.front());
+        for (int i = k; i < n; ++i) {
+            if (!d.empty() && nums[i - k] == d.front())
+                d.pop_front();
+            while (!d.empty() && d.back() < nums[i])
+                d.pop_back();
+            d.push_back(nums[i]);
+            res.push_back(d.front());
         }
         return res;
     }
 };
+
 
 #endif
