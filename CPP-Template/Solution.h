@@ -10,27 +10,21 @@
 
 class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int> &nums, int k) {
-        int n = nums.size();
-        deque<int> d;
-        vector<int> res;
-        for (int i = 0; i < k; ++i) {
-            while (!d.empty() && d.back() < nums[i])
-                d.pop_back();
-            d.push_back(nums[i]);
-        }
-        res.push_back(d.front());
-        for (int i = k; i < n; ++i) {
-            if (!d.empty() && nums[i - k] == d.front())
-                d.pop_front();
-            while (!d.empty() && d.back() < nums[i])
-                d.pop_back();
-            d.push_back(nums[i]);
-            res.push_back(d.front());
-        }
-        return res;
+    int numRollsToTarget(int d, int f, int target) {
+        int dp[d + 1][target + f + 1];
+        memset(dp, 0, sizeof(dp));
+        dp[0][0] = 1;
+        for (int i = 0; i < d; ++i)
+            for (int j = 0; j < target; ++j)
+                if (dp[i][j])
+                    for (int k = 1; k <= f; ++k)
+                        if (j + k <= target) {
+                            dp[i + 1][j + k] = dp[i + 1][j + k] + dp[i][j] % 1000000007;
+                            cout << i + 1 << ' ' << j + k << ' ' << dp[i + 1][j + k] << endl;
+                        }
+        return dp[d][target];
     }
-};
+};;
 
 
 #endif

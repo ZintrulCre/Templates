@@ -63,34 +63,34 @@ f.right = j
 # s = sol.sufficientSubset(a,22)
 # print(s)
 
-v1 = [int(x) for x in input().split(' ')]
-v2 = [int(x) for x in input().split(' ')]
-
-i, res = 1, -sys.maxsize
-
-if len(v1) > 2 and v1[0] > v1[1] and v1[0] > v1[2]:
-    x = v1[0]
-    for m in v2:
-        if m < v1[1]:
-            res = max(res, m)
-    if res != -sys.maxsize:
-        v1[0] = res
-    print(v1 if res != -sys.maxsize else "NO")
-else:
-    while i < len(v1):
-        if v1[i] <= v1[i - 1]:
+n = int(input())
+year = [int(x) for x in input().split(' ')]
+res = [0 for x in range(n)]
+bot = []
+if n > 1:
+    if year[1] >= year[0]:
+        bot.append(0)
+        res[0] = 1
+    if year[-2] >= year[-1]:
+        bot.append(n - 1)
+        res[-1] = 1
+for i in range(1, len(year) - 1):
+    if year[i + 1] >= year[i] and year[i - 1] >= year[i]:
+        bot.append(i)
+        res[i] = 1
+for i in bot:
+    for j in range(i - 1, -1, -1):
+        if year[j] < year[j + 1]:
             break
-        i += 1
-    if i == len(v1) or v1[i + 1] > v1[i - 1]:
-        for m in v2:
-            if m > v1[i - 1] and (i + 1 >= len(v1) or m < v1[i + 1]):
-                res = max(res, m)
-        if res != -sys.maxsize:
-            v1[i] = res
-    elif v1[i + 1] < v1[i - 1]:
-        for m in v2:
-            if m < v1[i]:
-                res = max(res, m)
-        if res != -sys.maxsize:
-            v1[i - 1] = res
-    print(v1 if res != -sys.maxsize else "NO")
+        elif year[j] == year[j + 1]:
+            res[j] = max(res[j], res[j + 1])
+        else:
+            res[j] = max(res[j], res[j + 1] + 1)
+    for j in range(i + 1, n):
+        if year[j] < year[j - 1]:
+            break
+        elif year[j] == year[j - 1]:
+            res[j] = max(res[j], res[j - 1])
+        else:
+            res[j] = max(res[j], res[j - 1] + 1)
+print(sum(res) * 100)

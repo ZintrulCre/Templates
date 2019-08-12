@@ -24,20 +24,5 @@ CMakeFiles/cpp.dir/TreeSerialization.cpp.o: ../Include.h
 CMakeFiles/cpp.dir/TreeSerialization.cpp.o: ../TreeSerialization.cpp
 CMakeFiles/cpp.dir/TreeSerialization.cpp.o: ../TreeSerialization.h
 
-CMakeFiles/cpp.dir/main.cpp.o: ../DataStructure.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Include.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Pointer/AutoPointer.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Pointer/Deleter.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Pointer/Include.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Pointer/Object.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Pointer/UniquePointer.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Print.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Printer.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Solution.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Sort/HeapSort.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Sort/MergeSort.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Sort/QuickSort.h
-CMakeFiles/cpp.dir/main.cpp.o: ../Sort/Sort.h
-CMakeFiles/cpp.dir/main.cpp.o: ../TreeSerialization.h
 CMakeFiles/cpp.dir/main.cpp.o: ../main.cpp
 
