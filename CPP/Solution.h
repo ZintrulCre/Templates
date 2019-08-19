@@ -8,32 +8,19 @@
 #include "DataStructure.h"
 #include "TreeSerialization.h"
 
-class MedianFinder {
-    priority_queue<double> max_heap;
-    priority_queue<double, vector<double>, greater<>> min_heap;
+class Solution {
 public:
-    /** initialize your data structure here. */
-    MedianFinder() {
-        max_heap = priority_queue<double>();
-        min_heap = priority_queue<double, vector<double>, greater<>>();
-    }
-
-    void addNum(int num) {
-        if (max_heap.empty() || max_heap.top() > num)
-            max_heap.push(num);
-        else
-            min_heap.push(num);
-        while (max_heap.size() > min_heap.size() + 1) {
-            min_heap.push(max_heap.top());
-            max_heap.pop();
+    int findCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst, int K) {
+        vector<int> prices(n, INT_MAX);
+        prices[src] = 0;
+        for (int i = 0; i <= K; ++i) {
+            vector<int> u(prices);
+            for (auto &f:flights)
+                if (prices[f[0]] != INT_MAX)
+                    u[f[1]] = min(u[f[1]], prices[f[0]] + f[2]);
+            prices = u;
         }
-    }
-
-    double findMedian() {
-        int ls = max_heap.size(), rs = min_heap.size();
-        if ((ls + rs) / 2 == 0)
-            return (max_heap.top() + min_heap.top()) / 2;
-        return ls > rs ? max_heap.top() : min_heap.top();
+        return prices[dst] == INT_MAX ? -1 : prices[dst];
     }
 };
 

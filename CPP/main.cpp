@@ -104,30 +104,23 @@ int main() {
                               {0, 1, 0, 1, 0, 0, 0, 1, 1, 0},
                               {0, 1, 1, 0, 0, 1, 1, 0, 0, 1},
                               {1, 0, 1, 1, 0, 1, 0, 1, 0, 1}};
-    vector<int> nums = {1,-1}, num1{4, 5, 2, 6, 7, 3, 1};
-    string str1 = "abcabdebac", str2 = "cda";
-    vector<string> strings{"oath", "pea", "eat", "rain"}, strings2{"oath", "eat"};
-    vector<vector<int>> matrix = {{2,1,1},{2,3,1},{3,4,1}}, matrix1 = {{1, 2},
-                                                               {2, 3},
-                                                               {3, 1}};
+    vector<int> nums = {3, 2, 4, 1}, num1{4, 5, 2, 6, 7, 3, 1};
+    string str1 = "abpcplea", str2 = "cda";
+    vector<string> strings{"ale", "apple", "monkey", "plea"}, strings2{"oath", "eat"};
+    vector<vector<int>> matrix = {{0, 1, 1},
+                                  {0, 2, 5},
+                                  {1, 2, 1},
+                                  {2, 3, 1}}, matrix1 = {{1, 2},
+                                                         {2, 3},
+                                                         {3, 1}};
 
-    vector<vector<char>> vc = {{'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
-                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'M'},
-                               {'E', 'E', 'M', 'E', 'E', 'E', 'E', 'E'},
-                               {'M', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
-                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
-                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
-                               {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E'},
-                               {'E', 'E', 'M', 'M', 'E', 'E', 'E', 'E'}};
-//    Solution sol;
-//    auto s = sol.topKFrequent()
-//    Printer::GetInstance().Print(s);
+    vector<vector<char>> vc = {{'1', '0', '1', '0', '0'},
+                               {'1', '0', '1', '1', '1'},
+                               {'1', '1', '1', '1', '1'},
+                               {'1', '0', '0', '1', '0'}};
+    Solution sol;
+    auto s = sol.findCheapestPrice(4, matrix, 0, 3, 1);
+    Print(s);
 
-    MedianFinder mf;
-    mf.addNum(1);
-    mf.addNum(2);
-    mf.findMedian();
-    mf.addNum(3);
-    mf.findMedian();
     return 0;
 }
