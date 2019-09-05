@@ -16,18 +16,17 @@
 using namespace std;
 
 int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<int> weight(n + 1, 0), value(n + 1, 0);
-    for (int i = 1; i <=n; ++i)
-        cin >> weight[i];
-    for (int i = 1; i <= n; ++i)
-        cin >> value[i];
-    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
-    for (int i = 1; i <= n; ++i) {
-        for (int j = 1; j <= m; ++j) {
-            dp[i][j] = (weight[i] <= j ? max(dp[i - 1][j], value[i] + dp[i - 1][j - weight[i]]) : dp[i - 1][j]);
+    int n = 0, res = 0;
+    cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; ++i)
+        cin >> v[i];
+    for (int i = 0; i < n; ++i) {
+        int curr = -1;
+        for (int j = i; j < n; ++j) {
+            curr = max(curr, v[j]);
+            res += curr;
         }
     }
-    cout << dp[n][m] << endl;
+    cout << res << endl;
 }

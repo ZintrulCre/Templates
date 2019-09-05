@@ -107,7 +107,7 @@
 //                              {1, 0, 1, 1, 0, 1, 0, 1, 0, 1}};
 //    vector<int> nums = {3, 2, 4, 1}, num1{4, 5, 2, 6, 7, 3, 1};
 //    string str1 = "abpcplea", str2 = "cda";
-//    vector<string> strings{"ale", "apple", "monkey", "plea"}, strings2{"oath", "eat"};
+//    vector<string> strings{"5","2","C","D","+"}, strings2{"oath", "eat"};
 //    vector<vector<int>> matrix = {{0, 1, 1},
 //                                  {0, 2, 5},
 //                                  {1, 2, 1},
@@ -119,17 +119,9 @@
 //                               {'1', '0', '1', '1', '1'},
 //                               {'1', '1', '1', '1', '1'},
 //                               {'1', '0', '0', '1', '0'}};
-////    Solution sol;
-////    auto s = sol.findCheapestPrice(4, matrix, 0, 3, 1);
-////    Print(s);
-//
-//    int pid = fork();
-//    if (pid == -1)
-//        return -1;
-//    if (pid == 0)
-//        printf("This is father process with pid %d\n", getpid());
-//    else
-//        printf("This is child process with pid %d\n", getpid());
+//    Solution sol;
+//    auto s = sol.calPoints(strings);
+//    Print(s);
 //
 //    return 0;
 //}
